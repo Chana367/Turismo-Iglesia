@@ -1,0 +1,81 @@
+{
+    "turismo":[
+        {
+            "nombre": "Tudcum",
+            "img": "dique.jpg",
+            "telefono": "",
+            "email": "",
+            "descripcion": "El Embalse Cuesta del Viento, es una presa hidroeléctrica, ubicada en el departamento Iglesia, al norte de la provincia argentina de San Juan. Está emplazada sobre la unión del río Blanco y el Arroyo Iglesia donde nace el río Jáchal. Este embalse es la obra hidroeléctrica más importante de la región norte de la provincia ya mencionada. La central hidroeléctrica regula los caudales de los arroyos y ríos provenientes del deshielo de la Cordillera de los Andes, con el fin de producir energía y fomentar la producción agrícola y minera de la zona. La obra tiene la capacidad para generar 40 gigavatios por hora y asegura el riego de alrededor de 17.000 hectáreas",
+            "facebook": "https://www.facebook.com/pages/Dique-Cuesta-Del-Viento-Rodeo-San-Juan/626089760802513",
+            "instagram": "https://www.instagram.com/explore/locations/767734588/dique-cuesta-del-viento-iglesia-san-juan/",
+            "id": "1"
+
+        },
+
+        {
+            "nombre": "Dirección de Turismo y Cultura",
+            "img": "oficinaturismo.jpg",
+            "telefono": "1111111111111111111",
+            "email": "11@gmail.com",
+            "descripcion": "Oficina de la Administración",
+            "facebook": "https://www.facebook.com/municipalidaddeiglesia",
+            "instagram": "https://www.instagram.com/iglesia_turismocultura/",
+            "id": "2"
+
+        } 
+    ],
+
+    "restaurante":[
+        {
+            "nombre": "Restaurante 1",
+            "img": "prueba1.jpg",
+            "telefono": "22222222",
+            "email": "qqqq@gmail.com",
+            "descripcion": "Restaurante de iglesia rodeo",
+            "facebook": "https://www.facebook.com/pages/Dique-Cuesta-Del-Viento-Rodeo-San-Juan/626089760802513",
+            "instagram": "https://www.instagram.com/explore/locations/767734588/dique-cuesta-del-viento-iglesia-san-juan/",
+            "id": "1"
+        },
+
+        {
+            "nombre": "Restaurante 2",
+            "img": "prueba2.jpg",
+            "telefono": "333333333333",
+            "email": "33@gmail.com",
+            "descripcion": "restaurante lider ",
+            "facebook": "https://www.facebook.com/municipalidaddeiglesia",
+            "instagram": "https://www.instagram.com/iglesia_turismocultura/",
+            "id": "2"
+
+        }
+        
+    ],
+
+    "hospedaje":[
+        {
+            "nombre": "hospedaje 1",
+            "img": "prueba1.jpg",
+            "telefono": "11111111111",
+            "email": "q2222q@gmail.com",
+            "descripcion": "hospedaje de iglesia rodeo",
+            "facebook": "https://www.facebook.com/pages/Dique-Cuesta-Del-Viento-Rodeo-San-Juan/626089760802513",
+            "instagram": "https://www.instagram.com/explore/locations/767734588/dique-cuesta-del-viento-iglesia-san-juan/",
+            "id": "1"
+        },
+
+        {
+            "nombre": "hospedaje 2",
+            "img": "prueba2.jpg",
+            "telefono": "333333333333",
+            "email": "3233232323232@gmail.com",
+            "descripcion": "hospedaje lider ",
+            "facebook": "https://www.facebook.com/municipalidaddeiglesia",
+            "instagram": "https://www.instagram.com/iglesia_turismocultura/",
+            "id": "2"
+
+        }
+
+
+        
+    ]
+}

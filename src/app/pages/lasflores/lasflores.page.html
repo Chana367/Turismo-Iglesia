@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button icon="arrow-back-circle-sharp" defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title mode="ios">Las Flores</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- AGREGAR RESTO DE COMPONENTES -->
+  <div id="container">
+
+    <ion-card  id="card" mode="ios" *ngFor="let categoria of categorias" routerLink="/lasflores/{{categoria.src}}">
+      <div id="img">
+        <img src="assets/img/categorias/{{categoria.img}}">
+      </div>
+      <ion-card-header>
+        <ion-card-title>{{categoria.nombre}}</ion-card-title>
+      </ion-card-header>
+    </ion-card>
+  </div>
+</ion-content>

@@ -1,0 +1,7 @@
+{
+  "name": "Iglesia Turismo",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

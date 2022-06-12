@@ -1,0 +1,40 @@
+{
+    "data":[
+        {
+            "nombre": "Rodeo",
+            "img": "rodeo.jpg",
+            "src": "rodeo"
+        },
+
+        {
+            "nombre": "Villa Iglesia",
+            "img": "villaiglesia.jpg",
+            "src": "villaiglesia"
+        },
+
+        {
+            "nombre": "Las Flores",
+            "img": "lasflores.jpg",
+            "src": "lasflores"
+        },
+
+        {
+            "nombre": "Bella Vista",
+            "img": "bellavista.jpg",
+            "src": "bellavista"
+        },
+        
+        {
+            "nombre": "Tudcum",
+            "img": "tudcum.jpg",
+            "src": "tudcum"
+        },
+
+        {
+            "nombre": "Angualasto",
+            "img": "angualasto.jpg",
+            "src": "angualasto"
+        }
+
+    ]
+}
