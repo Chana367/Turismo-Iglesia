@@ -11,6 +11,7 @@ import { map } from "rxjs/operators";
 export class RestaurantePage implements OnInit {
   //Arreglo de categorias.json
   restaurantes: any = []; 
+  textoBuscar='';
   
   constructor(private http: HttpClient, private router: Router) { }
 
@@ -29,5 +30,13 @@ export class RestaurantePage implements OnInit {
         return res.restaurante;
       })
       )
+  }
+
+  
+ //funcion que busca con el search bar
+ buscar(event){
+  //console.log(event);
+  this.textoBuscar= event.detail.value;
+
   }
 }

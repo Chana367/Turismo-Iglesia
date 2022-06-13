@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { TurismoPageRoutingModule } from './turismo-routing.module';
 
 import { TurismoPage } from './turismo.page';
+import { PipesModule } from 'src/app/pipes/pipes.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    TurismoPageRoutingModule
+    TurismoPageRoutingModule,
+    PipesModule
   ],
   declarations: [TurismoPage]
 })

@@ -10,7 +10,8 @@ import { map } from "rxjs/operators";
 })
 export class HospedajePage implements OnInit {
   //Arreglo de categorias.json
-  hospedajes: any = []; 
+  hospedajes: any = [];
+  textoBuscar=''; 
   constructor(private http: HttpClient, private router: Router) { }
 
   ngOnInit() {
@@ -28,5 +29,12 @@ export class HospedajePage implements OnInit {
         return res.hospedaje;
       })
       )
+  }
+
+   //funcion que busca con el search bar
+ buscar(event){
+  //console.log(event);
+  this.textoBuscar= event.detail.value;
+
   }
 }

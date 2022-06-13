@@ -34,4 +34,12 @@ export class TurismoPage implements OnInit {
         )
       }
 
+      textoBuscar=''; 
+      //funcion que busca con el search bar
+    buscar(event){
+     //console.log(event);
+     this.textoBuscar= event.detail.value;
+    
+     }
+
 }

@@ -8,12 +8,15 @@ import { HospedajePageRoutingModule } from './hospedaje-routing.module';
 
 import { HospedajePage } from './hospedaje.page';
 
+import { PipesModule } from 'src/app/pipes/pipes.module';
+
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    HospedajePageRoutingModule
+    HospedajePageRoutingModule,
+    PipesModule
   ],
   declarations: [HospedajePage]
 })

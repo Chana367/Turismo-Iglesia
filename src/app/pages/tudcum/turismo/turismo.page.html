@@ -6,12 +6,12 @@
     <ion-title mode="ios">Turismo</ion-title>
   </ion-toolbar>
 </ion-header>
-
+  <ion-searchbar (ionChange)="buscar($event)"animated mode="ios"></ion-searchbar>      <!-- Busca por titulo los videos-->
 <ion-content>
   <!-- AGREGAR RESTO DE COMPONENTES -->
   <div id="container">
 
-    <ion-card  id="card" mode="ios" *ngFor="let turismo of turismos">
+    <ion-card  id="card" mode="ios" *ngFor="let turismo of turismos| filtro: textoBuscar; let i = index ">
       <div id="img">
         <img src="assets/img/categorias/turismo/{{turismo.img}}">
       </div>

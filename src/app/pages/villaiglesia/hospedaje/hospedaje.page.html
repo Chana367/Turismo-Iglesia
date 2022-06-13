@@ -6,12 +6,12 @@
     <ion-title mode="ios">Hospedaje</ion-title>
   </ion-toolbar>
 </ion-header>
-
+  <ion-searchbar (ionChange)="buscar($event)"animated mode="ios"></ion-searchbar>      <!-- Busca por titulo los videos-->
 <ion-content>
   <!-- AGREGAR RESTO DE COMPONENTES -->
   <div id="container">
 
-    <ion-card  id="card" mode="ios" *ngFor="let hospedaje of hospedajes">
+    <ion-card  id="card" mode="ios" *ngFor="let hospedaje of hospedajes| filtro: textoBuscar; let i = index">
       <div id="img">
       <img src="assets/img/categorias/hospedaje/{{hospedaje.img}}">
     </div>
