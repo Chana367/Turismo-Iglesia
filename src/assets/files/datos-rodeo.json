@@ -1,52 +1,80 @@
 {
     "turismo":[
+
         {
-            "nombre": "Rodeo",
-            "img": "dique.jpg",
-            "telefono": "2645616793",
+            "nombre": "Secretaria de Turismo y Cultura",
+            "img": "oficinaturismo.jpg",
+            "telefono": "",
             "email": "",
-            "descripcion": "El Embalse Cuesta del Viento, es una presa hidroeléctrica, ubicada en el departamento Iglesia, al norte de la provincia argentina de San Juan. Está emplazada sobre la unión del río Blanco y el Arroyo Iglesia donde nace el río Jáchal. Este embalse es la obra hidroeléctrica más importante de la región norte de la provincia ya mencionada. La central hidroeléctrica regula los caudales de los arroyos y ríos provenientes del deshielo de la Cordillera de los Andes, con el fin de producir energía y fomentar la producción agrícola y minera de la zona. La obra tiene la capacidad para generar 40 gigavatios por hora y asegura el riego de alrededor de 17.000 hectáreas",
-            "facebook": "https://www.facebook.com/pages/Dique-Cuesta-Del-Viento-Rodeo-San-Juan/626089760802513",
-            "instagram": "https://www.instagram.com/explore/locations/767734588/dique-cuesta-del-viento-iglesia-san-juan/",
+            "descripcion": "Oficina de la Administración",
+            "facebook": "https://www.facebook.com/municipalidaddeiglesia",
+            "instagram": "https://www.instagram.com/iglesia_turismocultura/",
             "id": "1",
-            "favoritos":"false"
+            "favoritos": false,
+            "button": false
+
 
         },
 
         {
-            "nombre": "Dirección de Turismo y Cultura",
-            "img": "oficinaturismo.jpg",
-            "telefono": "1111111111111111111",
-            "email": "11@gmail.com",
-            "descripcion": "Oficina de la Administración",
-            "facebook": "https://www.facebook.com/municipalidaddeiglesia",
-            "instagram": "https://www.instagram.com/iglesia_turismocultura/",
+            "nombre": "Finca El Martillo",
+            "img": "finca-el-martillo.jpg",
+            "telefono": "2646721300",
+            "email": "",
+            "descripcion": "Artesanias, regionales, paseos, huerta, caminata por la finca, guanacos, vicuñas, parrilleros y espacios verdes| de 9hs a 22hs Todos los dias. ",
+            "facebook": "https://www.facebook.com/FincaElMartilloRodeo",
+            "instagram": "https://www.instagram.com/fincaelmartillo/",
             "id": "2"
 
-        } 
+        },
+
+        {
+            "nombre": "Cuesta del Viento Kite School",
+            "img": "kiteschool.jpg",
+            "telefono": "2645298828",
+            "email": "cuestakiteschool@gmail.com",
+            "descripcion": "Parador ASK (Asociacion sanjuanina de kitesurf): Bar, resto,snack, baños, guarderia nautica, clases de kitesurf, alquiler de kayak, SUP, equipos de kitesurf| de 11hs a 20hs Todos los dias.",
+            "facebook": "https://www.facebook.com/CuestaDelVientoKiteSchool",
+            "instagram": "https://www.instagram.com/cuestakiteschool/",
+            "id": "3"
+
+        }
+
     ],
 
     "restaurante":[
         {
-            "nombre": "Restaurante 1",
-            "img": "prueba1.jpg",
-            "telefono": "22222222",
-            "email": "qqqq@gmail.com",
-            "descripcion": "Restaurante de iglesia rodeo",
-            "facebook": "https://www.facebook.com/pages/Dique-Cuesta-Del-Viento-Rodeo-San-Juan/626089760802513",
-            "instagram": "https://www.instagram.com/explore/locations/767734588/dique-cuesta-del-viento-iglesia-san-juan/",
+            "nombre": "Cocina y Reposteria Carina Varela",
+            "img": "carina-varela.jpg",
+            "telefono": "2644047925",
+            "email": "gastronomiavarela@gmail.com",
+            "descripcion": "de 8 a 22hs| Todos los dias",
+            "facebook": "",
+            "instagram": "https://www.instagram.com/cocinareposteria8/",
             "id": "1"
         },
 
         {
-            "nombre": "Restaurante 2",
-            "img": "prueba2.jpg",
-            "telefono": "333333333333",
-            "email": "33@gmail.com",
-            "descripcion": "restaurante lider ",
-            "facebook": "https://www.facebook.com/municipalidaddeiglesia",
-            "instagram": "https://www.instagram.com/iglesia_turismocultura/",
+            "nombre": "Confiteria Pedro's",
+            "img": "confiteria-pedro.jpg",
+            "telefono": "2644390904",
+            "email": "",
+            "descripcion": "A partir de 21hs| Todos los dias  ",
+            "facebook": "",
+            "instagram": "",
             "id": "2"
+
+        },
+
+        {
+            "nombre": "Confiteria Yo Tengo Fe",
+            "img": "confiteria-yotengofe.jpg",
+            "telefono": "2644456888",
+            "email": "carlosdanielmarinero@gmail.com",
+            "descripcion": "De 9hs a 14hs| Sabados, Domingos y Feriados",
+            "facebook": "",
+            "instagram": "",
+            "id": "3"
 
         }
         
@@ -54,29 +82,39 @@
 
     "hospedaje":[
         {
-            "nombre": "hospedaje 1",
-            "img": "prueba1.jpg",
-            "telefono": "11111111111",
-            "email": "q2222q@gmail.com",
-            "descripcion": "hospedaje de iglesia rodeo",
-            "facebook": "https://www.facebook.com/pages/Dique-Cuesta-Del-Viento-Rodeo-San-Juan/626089760802513",
-            "instagram": "https://www.instagram.com/explore/locations/767734588/dique-cuesta-del-viento-iglesia-san-juan/",
+            "nombre": "Estancia La Vicuñita",
+            "img": "vicuñita.jpg",
+            "telefono": "2646613188",
+            "email": "info@cuestadelviento.com.ar",
+            "descripcion": "La Vicuñita es un complejo turístico compuesto por Cabañas completamente equipadas, Hotel con Restó y Hostel. Piscina, solaruim y campo de deportes.",
+            "facebook": "https://www.facebook.com/lavicunitacuestadelviento",
+            "instagram": "https://www.instagram.com/la_vicunita/",
             "id": "1"
         },
 
         {
-            "nombre": "hospedaje 2",
-            "img": "prueba2.jpg",
-            "telefono": "333333333333",
-            "email": "3233232323232@gmail.com",
-            "descripcion": "hospedaje lider ",
-            "facebook": "https://www.facebook.com/municipalidaddeiglesia",
-            "instagram": "https://www.instagram.com/iglesia_turismocultura/",
+            "nombre": "Hospedaje Las Tapias",
+            "img": "tapias.jpg",
+            "telefono": "2645898741",
+            "email": "",
+            "descripcion": "Las Tapias es un complejo ubicado al pie del Cerro Negro; las combinaciones de barro y madera en su construccion crean contraste con su entorno natural.",
+            "facebook": "https://www.facebook.com/LasTapias",
+            "instagram": "https://www.instagram.com/las.tapias/",
             "id": "2"
 
+        },
+
+        {
+            "nombre": "Hospedaje La Quita Pena",
+            "img": "quitapena.jpg",
+            "telefono": "2644040236",
+            "email": "ofalcon@hotmail.com.ar",
+            "descripcion": "Cabañas para 6/4/2 personas y Dormis completamente equipados. Cochera, asador y demás",
+            "facebook": "https://www.facebook.com/osvaldo.falcon.3760",
+            "instagram": "https://www.instagram.com/laquitapena_alojamientos/",
+            "id": "3"
+
         }
-
-
         
     ]
 }

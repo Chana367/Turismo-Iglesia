@@ -34,4 +34,15 @@ export class TurismoPage implements OnInit {
         )
       }
 
+      favoritos(x){
+
+        if(this.turismos[x].button==false){
+          this.turismos[x].button=true
+          return this.turismos[x]
+        }else if(this.turismos[x].button==true){
+          this.turismos[x].button=false
+          return this.turismos[x]
+        }
+    }
+
 }

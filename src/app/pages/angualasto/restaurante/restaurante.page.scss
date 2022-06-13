@@ -1,15 +1,10 @@
-
-#container{
-    position: relative;
-    margin: auto;
-    width: 600px;
-    height: 600px;
-}
 #img{
     width: 100%;
     max-width: 700px;
     margin: 0;
-    background-size: cover; 
+    background-size: cover;
+    display: flex;
+    justify-content: center;
 }
 
 #card{
@@ -23,6 +18,12 @@
     
 }
 
+#container{
+    position: relative;
+    margin: auto;
+    width: 600px;
+    height: 600px;
+}
 
 
 

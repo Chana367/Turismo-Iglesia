@@ -1,25 +1,25 @@
 {
     "turismo":[
         {
-            "nombre": "Tudcum",
-            "img": "dique.jpg",
-            "telefono": "",
+            "nombre": "Andar Ciclo Turismo",
+            "img": "cicloturismo.jpg",
+            "telefono": "2645720549",
             "email": "",
-            "descripcion": "El Embalse Cuesta del Viento, es una presa hidroeléctrica, ubicada en el departamento Iglesia, al norte de la provincia argentina de San Juan. Está emplazada sobre la unión del río Blanco y el Arroyo Iglesia donde nace el río Jáchal. Este embalse es la obra hidroeléctrica más importante de la región norte de la provincia ya mencionada. La central hidroeléctrica regula los caudales de los arroyos y ríos provenientes del deshielo de la Cordillera de los Andes, con el fin de producir energía y fomentar la producción agrícola y minera de la zona. La obra tiene la capacidad para generar 40 gigavatios por hora y asegura el riego de alrededor de 17.000 hectáreas",
-            "facebook": "https://www.facebook.com/pages/Dique-Cuesta-Del-Viento-Rodeo-San-Juan/626089760802513",
-            "instagram": "https://www.instagram.com/explore/locations/767734588/dique-cuesta-del-viento-iglesia-san-juan/",
+            "descripcion": "Alquiler de bicicletas por dia, con equipo incluido, grupo de 6 personas. Circuitos con guia. Duracion de 2:30hs y principiantes duracion de 1:30hs, con reserva previa. Actividades a 2000 m.s.n.m. | 9hs a 18hs, Todos los dias ",
+            "facebook": "https://www.facebook.com/Andar-Cicloturismo-107121764172803",
+            "instagram": "https://www.instagram.com/andarcicloturismo/",
             "id": "1"
 
         },
 
         {
-            "nombre": "Dirección de Turismo y Cultura",
-            "img": "oficinaturismo.jpg",
-            "telefono": "1111111111111111111",
-            "email": "11@gmail.com",
-            "descripcion": "Oficina de la Administración",
-            "facebook": "https://www.facebook.com/municipalidaddeiglesia",
-            "instagram": "https://www.instagram.com/iglesia_turismocultura/",
+            "nombre": "Estancia Guañizuil ",
+            "img": "guañizuil.jpg",
+            "telefono": "2612587198",
+            "email": "",
+            "descripcion": "Cabalgatas y Caminatas",
+            "facebook": "https://www.facebook.com/estanciaguanizuil.sanjuan",
+            "instagram": "https://www.instagram.com/guanizuil_estancia/?hl=es",
             "id": "2"
 
         } 
@@ -27,51 +27,39 @@
 
     "restaurante":[
         {
-            "nombre": "Restaurante 1",
+            "nombre": "Hospedaje y Restaurant la Olla",
             "img": "prueba1.jpg",
-            "telefono": "22222222",
-            "email": "qqqq@gmail.com",
-            "descripcion": "Restaurante de iglesia rodeo",
-            "facebook": "https://www.facebook.com/pages/Dique-Cuesta-Del-Viento-Rodeo-San-Juan/626089760802513",
-            "instagram": "https://www.instagram.com/explore/locations/767734588/dique-cuesta-del-viento-iglesia-san-juan/",
+            "telefono": "2645834346",
+            "email": "",
+            "descripcion": "",
+            "facebook": "",
+            "instagram": "",
             "id": "1"
-        },
-
-        {
-            "nombre": "Restaurante 2",
-            "img": "prueba2.jpg",
-            "telefono": "333333333333",
-            "email": "33@gmail.com",
-            "descripcion": "restaurante lider ",
-            "facebook": "https://www.facebook.com/municipalidaddeiglesia",
-            "instagram": "https://www.instagram.com/iglesia_turismocultura/",
-            "id": "2"
-
         }
         
     ],
 
     "hospedaje":[
         {
-            "nombre": "hospedaje 1",
+            "nombre": "Hospedaje y Restaurant la Olla",
             "img": "prueba1.jpg",
-            "telefono": "11111111111",
-            "email": "q2222q@gmail.com",
-            "descripcion": "hospedaje de iglesia rodeo",
-            "facebook": "https://www.facebook.com/pages/Dique-Cuesta-Del-Viento-Rodeo-San-Juan/626089760802513",
-            "instagram": "https://www.instagram.com/explore/locations/767734588/dique-cuesta-del-viento-iglesia-san-juan/",
+            "telefono": "2645834346",
+            "email": "",
+            "descripcion": "",
+            "facebook": "",
+            "instagram": "",
             "id": "1"
         },
 
         {
-            "nombre": "hospedaje 2",
+            "nombre": "Cabaña La Retama",
             "img": "prueba2.jpg",
-            "telefono": "333333333333",
-            "email": "3233232323232@gmail.com",
-            "descripcion": "hospedaje lider ",
-            "facebook": "https://www.facebook.com/municipalidaddeiglesia",
-            "instagram": "https://www.instagram.com/iglesia_turismocultura/",
-            "id": "2"
+            "telefono": "2645820407",
+            "email": "msandracristina@yahoo.com",
+            "descripcion": "",
+            "facebook": "",
+            "instagram": "",
+            "id": ""
 
         }
 

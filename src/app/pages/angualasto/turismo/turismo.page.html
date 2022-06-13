@@ -30,12 +30,11 @@
           <ion-item *ngIf="turismo.email != '' " href="mailto:{{turismo.email}}">
             Email: {{turismo.email}}
           </ion-item>
-          <ion-item>
+          <ion-item *ngIf="turismo.descripcion != '' ">
             Descripcion: {{turismo.descripcion}}
           </ion-item>
-          <ion-item>
-            <iframe *ngIf="turismo.id == 1 " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27591.065304855118!2d-69.08417660933837!3d-30.183331337230303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9684a365dda86b77%3A0xc85819117eac932!2sEmbalse%20Cuesta%20del%20Viento!5e0!3m2!1ses-419!2sar!4v1654388805945!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        
-            <iframe *ngIf="turismo.id == 2 " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3447.966572419615!2d-69.1357340651123!3d-30.209501499999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9684bd71dca0a507%3A0x1816fe7254006f18!2sDirecci%C3%B3n%20de%20Turismo%20y%20Cultura!5e0!3m2!1ses-419!2sar!4v1654390099713!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <ion-item *ngIf="turismo.id != '' ">
+            
           </ion-item>
         </ion-list>
         
