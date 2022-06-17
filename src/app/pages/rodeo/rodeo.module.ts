@@ -5,7 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 
 import { RodeoPageRoutingModule } from './rodeo-routing.module';
-
+import { IonicStorageModule } from '@ionic/storage-angular';
 import { RodeoPage } from './rodeo.page';
 
 @NgModule({
@@ -13,7 +13,8 @@ import { RodeoPage } from './rodeo.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    RodeoPageRoutingModule
+    RodeoPageRoutingModule,
+    IonicStorageModule.forRoot()
   ],
   declarations: [RodeoPage]
 })

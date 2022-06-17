@@ -8,6 +8,7 @@ import { TurismoPageRoutingModule } from './turismo-routing.module';
 
 import { TurismoPage } from './turismo.page';
 import { PipesModule } from 'src/app/pipes/pipes.module';
+import { IonicStorageModule } from '@ionic/storage-angular';
 
 @NgModule({
   imports: [
@@ -15,7 +16,8 @@ import { PipesModule } from 'src/app/pipes/pipes.module';
     FormsModule,
     IonicModule,
     TurismoPageRoutingModule,
-    PipesModule
+    PipesModule,
+    IonicStorageModule.forRoot()
   ],
   declarations: [TurismoPage]
 })

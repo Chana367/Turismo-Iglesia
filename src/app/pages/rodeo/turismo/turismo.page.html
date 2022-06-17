@@ -57,12 +57,10 @@
             <ion-icon size="large" name="logo-whatsapp"></ion-icon>
           </ion-button>
 
-
-
-          <ion-button *ngIf="turismo.button == false" (click)="favoritos(i)" slot="end">
+          <ion-button *ngIf="!favoritoEsta(turismo)" (click)="favoritos(i)" slot="end">
             <ion-icon name="bookmark-outline" size="large"></ion-icon>
           </ion-button>
-          <ion-button *ngIf="turismo.button == true" (click)="favoritos(i)" slot="end">
+          <ion-button *ngIf="favoritoEsta(turismo)" (click)="favoritos(i)" slot="end">
             <ion-icon name="bookmark"  size="large"></ion-icon>
           </ion-button>
 
