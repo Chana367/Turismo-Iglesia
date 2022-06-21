@@ -1,24 +1,24 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
-import { HttpClient } from '@angular/common/http';
-import { map } from "rxjs/operators";
+
 import { GlobalesService } from 'src/app/services/globales.service';
+
+
 @Component({
-  selector: 'app-restaurante',
-  templateUrl: './restaurante.page.html',
-  styleUrls: ['./restaurante.page.scss'],
+  selector: 'app-favoritos',
+  templateUrl: './favoritos.page.html',
+  styleUrls: ['./favoritos.page.scss'],
 })
-export class RestaurantePage implements OnInit {
+export class FavoritosPage implements OnInit {
+
+  constructor(private storage:GlobalesService) { }
   //Arreglo de categorias.json
-  restaurantes: any = []; 
-  favorito: any= [];
-  
-  constructor(private http: HttpClient, private router: Router,private storage:GlobalesService) { }
+  textoBuscar='';
+  favorito: any= [];l
 
   async ngOnInit() {
-    
+
     const favorito_storage = await this.storage.get('favorito_turismo_tudcum');
-    
+
     if((favorito_storage==null) || (favorito_storage.length==0)){
       
       console.log("Se ejecuta el if del ngOninit")
@@ -26,46 +26,51 @@ export class RestaurantePage implements OnInit {
 
     }else{
       console.log("Se ejecuta el else del ngOninit")
-     
       this.favorito = favorito_storage;
     
     }
-    this.getRestaurante().subscribe(res=>{console.log("Datos de restaurante Tudcum ",res) //me suscribo a los datos del servidor/.json
-    this.restaurantes = res;
     
-  })
+    console.log(this.favorito)
+  
+    
+    // this.favorito.forEach((item)=>{
+    // 	//pushes only unique element
+    //   //   if(!this.favorito.includes(item)){
+    // 	// 	this.favorito.splice(item,1)
+    //   //   console.log("sssssssssss",this.favorito)
+    // 	// }
+    // })
+
+
+    //   for(let i=0;i<this.favorito.length;i++)
+    //  {
+    //    if (this.favorito[i]==this.favorito[i++]){
+    //        this.favorito.splice(this.favorito.indexOf(this.favorito[i]), 1);
+    //       // delete this.favorito[i];
+    //       //this.favorito = favorito_storage;
+    //       console.log("se repite el ", this.favorito[i])
+    //    }
+    //  }
+     
+    
+   
+   // console.log(this.favorito)
+    
+    
   }
 
-  getRestaurante(){
-    return this.http
-    .get("assets/files/datos-tudcum.json")  
-    .pipe(
-      map((res:any)=>{
-        return res.restaurante;
-      })
-      )
-  }
-  textoBuscar=''; 
-  //funcion que busca con el search bar
-buscar(event){
- //console.log(event);
- this.textoBuscar= event.detail.value;
 
- }
-
- 
- favoritoEsta(x)
+  favoritoEsta(x)
   {
 
    for(let i=0;i<this.favorito.length;i++){
    
-    if(this.favorito[i].nombre==this.restaurantes[x].nombre){
+    if(this.favorito[i].nombre==this.favorito[x].nombre){
      // console.log("es igual")
       return true
     }
    }
    return false
- 
 
   }
   obtenerIndice(x)
@@ -73,13 +78,13 @@ buscar(event){
 
    for(let i=0;i<this.favorito.length;i++){
    
-    if(this.favorito[i].nombre==this.restaurantes[x].nombre){
+    if(this.favorito[i].nombre==this.favorito[x].nombre){
      // console.log("es igual")
       return i;
     }
    }
    return -1;
-
+  
 
   }
   async favoritos(x){
@@ -88,7 +93,7 @@ buscar(event){
     // this.global.favoritos(this.turismos[x],"rodeo");
     if(!this.favoritoEsta(x)){
       
-      this.favorito.push(this.restaurantes[x])
+      this.favorito.push(this.favorito[x])
       await this.storage.set('favorito_turismo_tudcum', this.favorito);
       console.log("Creo", this.storage.get('favorito_turismo_tudcum'))
   
@@ -105,4 +110,5 @@ buscar(event){
 
 
   }
+
 }

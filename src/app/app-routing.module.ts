@@ -29,10 +29,6 @@ const routes: Routes = [
   {
     path: 'angualasto',
     loadChildren: () => import('./pages/angualasto/angualasto.module').then( m => m.AngualastoPageModule)
-  },
-  {
-    path: 'favoritos',
-    loadChildren: () => import('./pages/favoritos/favoritos.module').then( m => m.FavoritosPageModule)
   }
 ];
 @NgModule({

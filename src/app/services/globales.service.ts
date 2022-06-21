@@ -10,13 +10,16 @@ export class GlobalesService {
 
   constructor(public storage: Storage) { 
       this.crear();
+      //  this.clear();
   }
 
   
   async crear()
   {
     await this.storage.create();
+
   }
+    
 // set a key/value
 
 async setString(key: string, value: any): Promise<any> {

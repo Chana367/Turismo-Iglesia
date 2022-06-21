@@ -15,7 +15,7 @@ export class TurismoPage implements OnInit {
   //Arreglo de categorias.json
   turismos: any = []; 
   textoBuscar='';
-  favorito: any= [];l
+  favorito: any= [];
 
   constructor(private http: HttpClient, private router: Router,private storage:GlobalesService) { }
 
@@ -43,10 +43,11 @@ export class TurismoPage implements OnInit {
 
     }else{
       console.log("Se ejecuta el else del ngOninit")
+     
       this.favorito = favorito_storage;
     
     }
-
+    
     // this.global.crear();
     // console.log("'''''''''''''''''''''''''''''''");
     // this.global.inicio("rodeo");
@@ -67,37 +68,71 @@ export class TurismoPage implements OnInit {
         )
       }
 
-      async favoritoEsta(x)
+       favoritoEsta(x)
       {
-        console.log(x);
-        if(this.favorito.includes(x))
-        {
-         // console.log("ESTA-----------------------");
-          return true;
+
+       for(let i=0;i<this.favorito.length;i++){
+       
+        if(this.favorito[i].nombre==this.turismos[x].nombre){
+         // console.log("es igual")
+          return true
         }
-        else{
-          //console.log("NO ESTA-----------------------");
-          return false;
+       }
+       return false
+        // if(this.favorito.includes(x))
+        // {
+        //  // console.log("ESTA-----------------------");
+        //   return true;
+        // }
+        // else{
+        //   //console.log("NO ESTA-----------------------");
+        //   return false;
+        // }
+
+      }
+      obtenerIndice(x)
+      {
+
+       for(let i=0;i<this.favorito.length;i++){
+       
+        if(this.favorito[i].nombre==this.turismos[x].nombre){
+         // console.log("es igual")
+          return i;
         }
-        
+       }
+       return -1;
+        // if(this.favorito.includes(x))
+        // {
+        //  // console.log("ESTA-----------------------");
+        //   return true;
+        // }
+        // else{
+        //   //console.log("NO ESTA-----------------------");
+        //   return false;
+        // }
+
       }
       async favoritos(x){
 
         
         // this.global.favoritos(this.turismos[x],"rodeo");
-        if(!this.favorito.includes(this.turismos[x])){
+        if(!this.favoritoEsta(x)){
+          
           this.favorito.push(this.turismos[x])
           await this.storage.set('favorito_turismo_rodeo', this.favorito);
           console.log("Creo", this.storage.get('favorito_turismo_rodeo'))
       
-        }else if(this.favorito.includes(this.turismos[x])){
-         let index=this.favorito.indexOf(this.turismos[x])
+        }else{
+         
+         let index=this.obtenerIndice(x);
+          //let index=this.favorito.indexOf(this.turismos[x])
          this.favorito.splice(index, 1)
          await this.storage.set('favorito_turismo_rodeo', this.favorito);
+         
          console.log("Saco", this.storage.get('favorito_turismo_rodeo'))
 
-        
         }
+
     
       }
  //funcion que busca con el search bar
