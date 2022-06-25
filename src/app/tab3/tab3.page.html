@@ -15,40 +15,38 @@
 
   <app-explore-container name="Tab 3 page"></app-explore-container>
 
-  <div id="container">
-    <form action="mailto:paredesfrancisco031@gmail.com">
-      
-      <ion-item>
-        <ion-label position="floating">Nombre</ion-label>
-        <ion-input type="text"></ion-input>
-      </ion-item>
-      <ion-item>
-        <ion-label position="floating">Telefono</ion-label>
-        <ion-input type="text"></ion-input>
-      </ion-item>
-      <ion-item>
-        <ion-label position="floating">Correo</ion-label>
-        <ion-input type="email"></ion-input>
-      </ion-item>
-      <ion-item>
-        <ion-label>Seleccionar Motivo</ion-label>
-        <ion-select value="confirmar" okText="Aceptar" cancelText="Rechazar">
-          <ion-select-option value="consulta">Consulta</ion-select-option>
-          <ion-select-option value="suscripcion">Suscripcion</ion-select-option>
-          <ion-select-option value="fallos">Reporte de Fallos</ion-select-option>
-          <ion-select-option value="otros">Otros</ion-select-option>
-        </ion-select>
-      </ion-item>
-      <ion-item>
-        <ion-label position="floating">Descripcion</ion-label>
-        <ion-textarea type="text"></ion-textarea>
-      </ion-item>
-      <ion-list>
-      </ion-list>
+<body>
+  
+  <section class="form-contact">
+    <header>
+      <span>
+        <ion-icon name="information-circle-outline" class="icon"></ion-icon>
+      </span>
+    </header>
 
-        <ion-button expand="block" type="submit">
-          <a href="mailto:paredesfrancisco031@gmail.com">Contact via E-mail</a>
-        </ion-button>
+    <form action="https://formsubmit.co/paredesfrancisco031@gmail.com" class="contact" method="POST">
+      <label for="Nombre Completo">Nombre Completo:</label>
+      <input type="text" name="Nombre Completo" id="Nombre Completo" required>
+      
+      <label for="Telefono">Telefono:</label>
+      <input type="tel" name="Telefono" id="Telefono" required>
+
+      <label for="Correo Electornico">Correo Electronico:</label>
+      <input type="email" name="Correo Electronico" id="Correo Electronico" required>
+
+  
+
+      <label for="Descripcion">Descripcion</label>
+      <textarea name="Descripcion" id="Descripcion" required></textarea>
+      <input type="submit" value="Enviar">
+
     </form>
-  </div>
+
+  </section>
+  
+</body>
+  
+  
+  
+
 </ion-content>

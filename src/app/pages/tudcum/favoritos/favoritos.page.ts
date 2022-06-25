@@ -13,7 +13,7 @@ export class FavoritosPage implements OnInit {
   constructor(private storage:GlobalesService) { }
   //Arreglo de categorias.json
   textoBuscar='';
-  favorito: any= [];l
+  favorito: any= [];
 
   async ngOnInit() {
 

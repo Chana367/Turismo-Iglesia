@@ -19,7 +19,11 @@ const routes: Routes = [
   {
     path: 'hospedaje',
     loadChildren: () => import('./hospedaje/hospedaje.module').then( m => m.HospedajePageModule)
+  },  {
+    path: 'favoritos',
+    loadChildren: () => import('./favoritos/favoritos.module').then( m => m.FavoritosPageModule)
   }
+
 ];
 
 @NgModule({

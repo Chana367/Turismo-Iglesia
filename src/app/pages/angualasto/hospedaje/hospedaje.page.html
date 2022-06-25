@@ -15,7 +15,7 @@
         <img src="assets/img/categorias/hospedaje/{{hospedaje.img}}">
       </div>
       <ion-card-header>
-        <ion-card-title>{{hospedaje.nombre}}</ion-card-title>
+        <ion-card-title *ngIf="hospedaje.nombre != '' " >{{hospedaje.nombre}}</ion-card-title>
       </ion-card-header>
       
       <ion-card-content>
@@ -47,6 +47,14 @@
           </ion-button>
           <ion-button *ngIf="hospedaje.telefono != '' " href="https://wa.me/+549{{hospedaje.telefono}}" target="_blank">
             <ion-icon size="large" name="logo-whatsapp"></ion-icon>
+          </ion-button>
+
+
+          <ion-button *ngIf="!favoritoEsta(i)" (click)="favoritos(i)" slot="end">
+            <ion-icon name="bookmark-outline" size="large"></ion-icon>
+          </ion-button>
+          <ion-button *ngIf="favoritoEsta(i)" (click)="favoritos(i)" slot="end">
+            <ion-icon name="bookmark"  size="large"></ion-icon>
           </ion-button>
         </ion-buttons>
         

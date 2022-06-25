@@ -16,7 +16,7 @@
         <img src="assets/img/categorias/turismo/{{turismo.img}}">
       </div>
       <ion-card-header>
-        <ion-card-title>{{turismo.nombre}}</ion-card-title>
+        <ion-card-title *ngIf="turismo.nombre != '' " >{{turismo.nombre}}</ion-card-title>
       </ion-card-header>
       
       <ion-card-content>
@@ -30,10 +30,10 @@
           <ion-item *ngIf="turismo.email != '' " href="mailto:{{turismo.email}}">
             Email: {{turismo.email}}
           </ion-item>
-          <ion-item>
+          <ion-item *ngIf="turismo.descripcion != '' " >
             Descripcion: {{turismo.descripcion}}
           </ion-item>
-        <ion-item>
+        <ion-item *ngIf="turismo.id != '' " >
           <iframe *ngIf="turismo.id == 1 " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3444.447229008484!2d-69.21698678526576!3d-30.30979438178651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9684950174e71bad%3A0xfdf42807657a0431!2sDon%20Goyo%20Turismo%20Aventura!5e0!3m2!1ses-419!2sar!4v1655144582206!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           <iframe *ngIf="turismo.id == 2 " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3444.354285385486!2d-69.23549748526563!3d-30.312438981785537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x968495a2106cff25%3A0x62d8d7ca82c063a!2sLa%20Comarca%20Del%20Jarillal!5e0!3m2!1ses-419!2sar!4v1655144613341!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </ion-item>
@@ -49,6 +49,12 @@
         </ion-button>
         <ion-button *ngIf="turismo.telefono != '' " href="https://wa.me/+549{{turismo.telefono}}" target="_blank">
           <ion-icon size="large" name="logo-whatsapp"></ion-icon>
+        </ion-button>
+        <ion-button *ngIf="!favoritoEsta(i)" (click)="favoritos(i)" slot="end">
+          <ion-icon name="bookmark-outline" size="large"></ion-icon>
+        </ion-button>
+        <ion-button *ngIf="favoritoEsta(i)" (click)="favoritos(i)" slot="end">
+          <ion-icon name="bookmark"  size="large"></ion-icon>
         </ion-button>
       </ion-buttons>
       

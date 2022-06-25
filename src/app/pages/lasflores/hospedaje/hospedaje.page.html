@@ -16,7 +16,7 @@
         <img src="assets/img/categorias/hospedaje/{{hospedaje.img}}">
       </div>
       <ion-card-header>
-        <ion-card-title>{{hospedaje.nombre}}</ion-card-title>
+        <ion-card-title *ngIf="hospedaje.nombre != '' " >{{hospedaje.nombre}}</ion-card-title>
       </ion-card-header>
       
       <ion-card-content>
@@ -33,7 +33,7 @@
           <ion-item *ngIf="hospedaje.descripcion != '' ">
             Descripcion: {{hospedaje.descripcion}}
           </ion-item>
-          <ion-item>
+          <ion-item *ngIf="hospedaje.id != '' " >
             <iframe *ngIf="hospedaje.id == 1 " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3443.971196247803!2d-69.21017447677923!3d-30.323337123510186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x968495a4df37ce6d%3A0x342d417b57328f18!2sCaba%C3%B1as%20Los%20Frutales!5e0!3m2!1ses-419!2sar!4v1655144927226!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             <iframe *ngIf="hospedaje.id == 2 "src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3444.031885031799!2d-69.21701278526535!3d-30.321610881782274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x968495c8381452ab%3A0x436c3f870a29eedd!2sCaba%C3%B1as%20El%20Sauce!5e0!3m2!1ses-419!2sar!4v1655145125235!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </ion-item>
@@ -50,6 +50,16 @@
         <ion-button *ngIf="hospedaje.telefono != '' " href="https://wa.me/+549{{hospedaje.telefono}}" target="_blank">
           <ion-icon size="large" name="logo-whatsapp"></ion-icon>
         </ion-button>
+
+        <ion-button *ngIf="!favoritoEsta(i)" (click)="favoritos(i)" slot="end">
+          <ion-icon name="bookmark-outline" size="large"></ion-icon>
+        </ion-button>
+        <ion-button *ngIf="favoritoEsta(i)" (click)="favoritos(i)" slot="end">
+          <ion-icon name="bookmark"  size="large"></ion-icon>
+        </ion-button>
+
+
+
       </ion-buttons>
       
       
