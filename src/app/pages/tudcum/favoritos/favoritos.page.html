@@ -10,7 +10,7 @@
 
   <ion-card  id="card" mode="ios" *ngFor="let turismo of favorito; let i = index ">
     <div id="img">
-      <img src="assets/img/categorias/turismo/{{turismo.img}}"> /
+      <img src="assets/img/categorias/favoritos/{{turismo.img}}"> /
      
     </div>
     <ion-card-header>
@@ -32,11 +32,17 @@
           Descripcion: {{turismo.descripcion}}
         </ion-item>
         <ion-item *ngIf="turismo.id != '' " >
-          <iframe *ngIf="turismo.id == 1 " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3447.966572419615!2d-69.1357340651123!3d-30.209501499999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9684bd71dca0a507%3A0x1816fe7254006f18!2sDirecci%C3%B3n%20de%20Turismo%20y%20Cultura!5e0!3m2!1ses-419!2sar!4v1654390099713!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          <iframe *ngIf="turismo.id == 2 " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3448.30112763219!2d-69.10812678488121!3d-30.199951781826016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9684bcf026566faf%3A0x722f3878db4afad5!2sFinca%20El%20Martillo!5e0!3m2!1ses-419!2sar!4v1655069707929!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
-          <iframe *ngIf="turismo.id == 3 " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3449.323362273067!2d-69.10825817483048!3d-30.170755623740426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9684bb65b9f5707b%3A0x420a8f2ca520c333!2sCuesta%20Del%20Viento%20Kite%20School!5e0!3m2!1ses-419!2sar!4v1655070655601!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          
-        
+          <!-- turismo -->
+          <iframe *ngIf="turismo.id == 1 " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3448.6338215078035!2d-69.27358898526892!3d-30.19045248182944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9684b9ba9b75acb5%3A0x15382e1d5902dfe0!2sANDAR%20Cicloturismo!5e0!3m2!1ses-419!2sar!4v1655147782653!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe *ngIf="turismo.id == 2 "src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127466.05879486898!2d-69.26970246433898!3d-30.21698569694405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96849547dde46937%3A0x7364a48e9b52cb88!2sESTANCIA%20GUA%C3%91IZUIL!5e0!3m2!1ses-419!2sar!4v1655147753166!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+          <!-- hospedaje -->
+          <iframe *ngIf="turismo.id == 100 " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3445.5592625256554!2d-69.23612938526655!3d-30.27813658179787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9684be31f8527b2d%3A0x6a1fdc4b17f95fb9!2sHospedaje%20y%20Restaurant%20la%20Olla!5e0!3m2!1ses-419!2sar!4v1655148097995!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+          <!--restaurantes  -->
+          <iframe *ngIf="turismo.id == 200 " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3445.5592625256554!2d-69.23612938526655!3d-30.27813658179787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9684be31f8527b2d%3A0x6a1fdc4b17f95fb9!2sHospedaje%20y%20Restaurant%20la%20Olla!5e0!3m2!1ses-419!2sar!4v1655148097995!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
         
         </ion-item>
       </ion-list>      

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { GlobalesService } from 'src/app/services/globales.service';
+import { ToastController } from '@ionic/angular';
 
 
 @Component({
@@ -10,7 +11,7 @@ import { GlobalesService } from 'src/app/services/globales.service';
 })
 export class FavoritosPage implements OnInit {
 
-  constructor(private storage:GlobalesService) { }
+  constructor(private storage:GlobalesService, private toastController: ToastController) { }
   //Arreglo de categorias.json
   textoBuscar='';
   favorito: any= [];
@@ -32,30 +33,6 @@ export class FavoritosPage implements OnInit {
     
     console.log(this.favorito)
   
-    
-    // this.favorito.forEach((item)=>{
-    // 	//pushes only unique element
-    //   //   if(!this.favorito.includes(item)){
-    // 	// 	this.favorito.splice(item,1)
-    //   //   console.log("sssssssssss",this.favorito)
-    // 	// }
-    // })
-
-
-    //   for(let i=0;i<this.favorito.length;i++)
-    //  {
-    //    if (this.favorito[i]==this.favorito[i++]){
-    //        this.favorito.splice(this.favorito.indexOf(this.favorito[i]), 1);
-    //       // delete this.favorito[i];
-    //       //this.favorito = favorito_storage;
-    //       console.log("se repite el ", this.favorito[i])
-    //    }
-    //  }
-     
-    
-   
-   // console.log(this.favorito)
-    
     
   }
 
@@ -96,19 +73,27 @@ export class FavoritosPage implements OnInit {
       this.favorito.push(this.favorito[x])
       await this.storage.set('favorito_turismo_tudcum', this.favorito);
       console.log("Creo", this.storage.get('favorito_turismo_tudcum'))
-  
+      this.presentToast('Agregado a Favoritos')
     }else{
      
      let index=this.obtenerIndice(x);
       //let index=this.favorito.indexOf(this.turismos[x])
      this.favorito.splice(index, 1)
      await this.storage.set('favorito_turismo_tudcum', this.favorito);
-     
+     this.presentToast('Eliminado de Favoritos')
      console.log("Saco", this.storage.get('favorito_turismo_tudcum'))
 
     }
 
 
+  }
+
+  async presentToast( message:string ) {
+    const toast = await this.toastController.create({
+      message,
+      duration: 2000
+    });
+    toast.present();
   }
 
 }

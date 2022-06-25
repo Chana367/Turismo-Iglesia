@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { GlobalesService } from 'src/app/services/globales.service';
-
+import { ToastController } from '@ionic/angular';
 
 @Component({
   selector: 'app-favoritos',
@@ -10,7 +10,7 @@ import { GlobalesService } from 'src/app/services/globales.service';
 })
 export class FavoritosPage implements OnInit {
 
-  constructor(private storage:GlobalesService) { }
+  constructor(private storage:GlobalesService, private toastController: ToastController) { }
   //Arreglo de categorias.json
   textoBuscar='';
   favorito: any= [];l
@@ -96,19 +96,27 @@ export class FavoritosPage implements OnInit {
       this.favorito.push(this.favorito[x])
       await this.storage.set('favorito_turismo_villaiglesia', this.favorito);
       console.log("Creo", this.storage.get('favorito_turismo_villaiglesia'))
-  
+      this.presentToast('Agregado a Favoritos')
     }else{
      
      let index=this.obtenerIndice(x);
       //let index=this.favorito.indexOf(this.turismos[x])
      this.favorito.splice(index, 1)
      await this.storage.set('favorito_turismo_villaiglesia', this.favorito);
-     
+     this.presentToast('Eliminado de Favoritos')
      console.log("Saco", this.storage.get('favorito_turismo_villaiglesia'))
 
     }
 
 
+  }
+
+  async presentToast( message:string ) {
+    const toast = await this.toastController.create({
+      message,
+      duration: 2000
+    });
+    toast.present();
   }
 
 }

@@ -6,7 +6,7 @@
     <ion-title mode="ios">Hospedaje</ion-title>
   </ion-toolbar>
 </ion-header>
-  <ion-searchbar (ionChange)="buscar($event)"animated mode="ios"></ion-searchbar>      <!-- Busca por titulo los videos-->
+  <ion-searchbar (ionChange)="buscar($event)"animated mode="ios" placeholder="Buscar"></ion-searchbar>      <!-- Busca por titulo los videos-->
 <ion-content>
   <!-- AGREGAR RESTO DE COMPONENTES -->
   <div id="container">
@@ -34,9 +34,9 @@
             Descripcion: {{hospedaje.descripcion}}
           </ion-item>
           <ion-item *ngIf="hospedaje.id != '' " >
-            <iframe *ngIf="hospedaje.id == 1 " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3448.531234637207!2d-69.10842918255615!3d-30.19338190000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9684bcb1b6ef8059%3A0x41960550c6996557!2sLa%20Vicu%C3%B1ita!5e0!3m2!1ses-419!2sar!4v1655073342923!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <iframe *ngIf="hospedaje.id == 2 " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3449.0895127925123!2d-69.11621898526937!3d-30.17743688183406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9684bb5947bb0c0f%3A0x4629cc71e8c4f621!2sLas%20Tapias!5e0!3m2!1ses-419!2sar!4v1655074618073!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <iframe *ngIf="hospedaje.id == 3 " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3448.5815559739845!2d-69.10981728526893!3d-30.191944981828847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9684bdf964e9109b%3A0x41ab35305057a849!2sLA%20QUITA%20PENA!5e0!3m2!1ses-419!2sar!4v1655075180969!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe *ngIf="hospedaje.id == 100 " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3448.531234637207!2d-69.10842918255615!3d-30.19338190000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9684bcb1b6ef8059%3A0x41960550c6996557!2sLa%20Vicu%C3%B1ita!5e0!3m2!1ses-419!2sar!4v1655073342923!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe *ngIf="hospedaje.id == 101 " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3449.0895127925123!2d-69.11621898526937!3d-30.17743688183406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9684bb5947bb0c0f%3A0x4629cc71e8c4f621!2sLas%20Tapias!5e0!3m2!1ses-419!2sar!4v1655074618073!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe *ngIf="hospedaje.id == 102 " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3448.5815559739845!2d-69.10981728526893!3d-30.191944981828847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9684bdf964e9109b%3A0x41ab35305057a849!2sLA%20QUITA%20PENA!5e0!3m2!1ses-419!2sar!4v1655075180969!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </ion-item>
       </ion-list>
       

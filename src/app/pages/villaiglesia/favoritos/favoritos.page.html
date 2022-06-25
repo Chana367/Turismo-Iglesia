@@ -10,7 +10,7 @@
 
   <ion-card  id="card" mode="ios" *ngFor="let turismo of favorito; let i = index ">
     <div id="img">
-      <img src="assets/img/categorias/turismo/{{turismo.img}}"> /
+      <img src="assets/img/categorias/favoritos/{{turismo.img}}"> /
      
     </div>
     <ion-card-header>
@@ -32,10 +32,20 @@
           Descripcion: {{turismo.descripcion}}
         </ion-item>
         <ion-item *ngIf="turismo.id != '' " >
-          <iframe *ngIf="turismo.id == 1 " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3447.966572419615!2d-69.1357340651123!3d-30.209501499999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9684bd71dca0a507%3A0x1816fe7254006f18!2sDirecci%C3%B3n%20de%20Turismo%20y%20Cultura!5e0!3m2!1ses-419!2sar!4v1654390099713!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          <iframe *ngIf="turismo.id == 2 " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3448.30112763219!2d-69.10812678488121!3d-30.199951781826016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9684bcf026566faf%3A0x722f3878db4afad5!2sFinca%20El%20Martillo!5e0!3m2!1ses-419!2sar!4v1655069707929!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
-          <iframe *ngIf="turismo.id == 3 " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3449.323362273067!2d-69.10825817483048!3d-30.170755623740426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9684bb65b9f5707b%3A0x420a8f2ca520c333!2sCuesta%20Del%20Viento%20Kite%20School!5e0!3m2!1ses-419!2sar!4v1655070655601!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          
+          <!-- turismo -->
+          <iframe *ngIf="turismo.id == 1 " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3440.887203771656!2d-69.25115108487624!3d-30.410941981750437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9684930fade50583%3A0x2dc9c8823245d515!2sPosada%20Alto%20Verde!5e0!3m2!1ses-419!2sar!4v1655140928230!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe *ngIf="turismo.id == 2 " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3439.909706306424!2d-69.25291338526219!3d-30.438661481740528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x968492f1cb5f0c3d%3A0xfb77c34ecfc47e87!2sPosta%20Kamak!5e0!3m2!1ses-419!2sar!4v1655141664230!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe *ngIf="turismo.id == 3 " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3481.333732211887!2d-69.35589318529466!3d-29.243146182180897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x969b420fe75eac21%3A0x18f6eae9c8b423f3!2sParque%20Nacional%20San%20Guillermo!5e0!3m2!1ses-419!2sar!4v1655141756938!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+          <!-- hospedaje -->
+          <iframe *ngIf="turismo.id == 100 " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3440.6713522520395!2d-69.22356808526273!3d-30.417064981748293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x968493b7cdd9bdd1%3A0xf3a736ea500d2465!2sComplejo%20Las%20Marias!5e0!3m2!1ses-419!2sar!4v1655142683073!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe *ngIf="turismo.id == 102 " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3440.8872037716505!2d-69.25115108526285!3d-30.41094198175059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9684930fade50583%3A0x2dc9c8823245d515!2sPosada%20Alto%20Verde!5e0!3m2!1ses-419!2sar!4v1655143101533!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe *ngIf="turismo.id == 103 " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3439.909706306424!2d-69.25291338526219!3d-30.438661481740528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x968492f1cb5f0c3d%3A0xfb77c34ecfc47e87!2sPosta%20Kamak!5e0!3m2!1ses-419!2sar!4v1655143409196!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+        
+          <!-- restaurantes -->
+          <iframe *ngIf="turismo.id == 200 " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3440.8872037716505!2d-69.25115108526285!3d-30.41094198175059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9684930fade50583%3A0x2dc9c8823245d515!2sPosada%20Alto%20Verde!5e0!3m2!1ses-419!2sar!4v1655143867878!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe *ngIf="turismo.id == 201 " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3440.690756876943!2d-69.2223301852627!3d-30.416514581748487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96849393637f09c3%3A0xc226e313f6441af8!2sLa%20Morenita!5e0!3m2!1ses-419!2sar!4v1655143839068!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>       
         
         
         </ion-item>

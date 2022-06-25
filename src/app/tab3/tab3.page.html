@@ -4,6 +4,7 @@
       Contacto
     </ion-title>
   </ion-toolbar>
+  
 </ion-header>
 
 <ion-content [fullscreen]="true">
@@ -14,39 +15,103 @@
   </ion-header>
 
   <app-explore-container name="Tab 3 page"></app-explore-container>
-
+<!-- 
 <body>
   
   <section class="form-contact">
     <header>
       <span>
-        <ion-icon name="information-circle-outline" class="icon"></ion-icon>
-      </span>
-    </header>
-
-    <form action="https://formsubmit.co/paredesfrancisco031@gmail.com" class="contact" method="POST">
-      <label for="Nombre Completo">Nombre Completo:</label>
-      <input type="text" name="Nombre Completo" id="Nombre Completo" required>
+        <img src="assets/img/logos/logo.jpg" alt="">
       
-      <label for="Telefono">Telefono:</label>
-      <input type="tel" name="Telefono" id="Telefono" required>
-
-      <label for="Correo Electornico">Correo Electronico:</label>
-      <input type="email" name="Correo Electronico" id="Correo Electronico" required>
+      </span>
+   
+    </header>
+    <span>
+      <img src="assets/img/logos/intendente.jpg" alt="">
+    </span>
 
   
+    <h3>Intendente</h3>
+    <ion-buttons id="buttons">
 
-      <label for="Descripcion">Descripcion</label>
-      <textarea name="Descripcion" id="Descripcion" required></textarea>
-      <input type="submit" value="Enviar">
+      <ion-button href="" target="_blank">
+        <ion-icon size="large" name="logo-facebook"></ion-icon>
+      </ion-button>
+      <ion-button href="" target="_blank"  >
+        <ion-icon size="large" name="logo-instagram"></ion-icon>
+      </ion-button>
+      <ion-button href="" target="_blank">
+        <ion-icon size="large" name="logo-whatsapp"></ion-icon>
+      </ion-button>
 
-    </form>
+    </ion-buttons>
 
   </section>
   
-</body>
-  
-  
-  
+</body> -->
+<span>
+  <img src="assets/img/logos/logo.jpg" alt="">
 
+</span>
+<ion-card>
+  <div id="img">
+    <img src="assets/img/logos/intendente.jpg"> 
+  </div>
+  <ion-card-header>
+    <ion-card-title>Dr. Jorge Leopoldo Espejo</ion-card-title>
+    <ion-card-subtitle>Intendente</ion-card-subtitle>
+  </ion-card-header>
+  <ion-card-content>
+    <!-- Listado de datos-->
+    <ion-list>
+      <ion-item href="https://municipalidaddeiglesia.gob.ar/">
+        Sitio Web: https://municipalidaddeiglesia.gob.ar/
+      </ion-item>
+      <ion-item href="mailto:intendente@municipalidaddeiglesia.gob.ar">
+        Email: intendente@municipalidaddeiglesia.gob.ar
+      </ion-item>
+      <ion-item >
+        Dirección: Santo Domingo 3650, Rodeo, Iglesia, San Juan - Municipalidad de Iglesia
+      </ion-item>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3349.844856477768!2d-69.13174447953627!3d-30.20847015282135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9684bced851adcb3%3A0xb480bf4b0a8f4463!2sMunicipalidad%20de%20Iglesia!5e0!3m2!1ses-419!2sar!4v1656186426443!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </ion-list>      
+    <ion-buttons id="buttons">
+
+      <ion-button href="https://www.facebook.com/JorgeEspejoOficial/" target="_blank">
+        <ion-icon size="large" name="logo-facebook"></ion-icon>
+      </ion-button>
+      <ion-button href="https://www.instagram.com/jorgeespejook/?hl=es-la" target="_blank"  >
+        <ion-icon size="large" name="logo-instagram"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+    
+  </ion-card-content>
+  
+</ion-card>
+
+<ion-card>
+  <div id="img">
+    <img src="assets/img/logos/desarrollador.jpg"> 
+  </div>
+  <ion-card-header>
+    <ion-card-subtitle>Desarrollador</ion-card-subtitle>
+    <ion-card-title>Francisco Paredes</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+    <ion-buttons id="buttons">
+    <ion-button href="https://www.facebook.com/JorgeEspejoOficial/" target="_blank">
+      <ion-icon size="large" name="logo-facebook"></ion-icon>
+    </ion-button>
+    <ion-button href="https://www.instagram.com/jorgeespejook/?hl=es-la" target="_blank"  >
+      <ion-icon size="large" name="logo-instagram"></ion-icon>
+    </ion-button>
+    <ion-button href="https://wa.me/+5492645616793" target="_blank">
+      <ion-icon size="large" name="logo-whatsapp"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+  </ion-card-content>
+</ion-card>
 </ion-content>
+

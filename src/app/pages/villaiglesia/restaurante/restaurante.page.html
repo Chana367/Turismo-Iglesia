@@ -6,7 +6,7 @@
     <ion-title mode="ios">Restaurantes</ion-title>
   </ion-toolbar>
 </ion-header>
-  <ion-searchbar (ionChange)="buscar($event)"animated mode="ios"></ion-searchbar>      <!-- Busca por titulo los videos-->
+  <ion-searchbar (ionChange)="buscar($event)"animated mode="ios" placeholder="Buscar"></ion-searchbar>      <!-- Busca por titulo los videos-->
 <ion-content>
   <!-- AGREGAR RESTO DE COMPONENTES -->
   <div id="container">
@@ -34,9 +34,11 @@
             Descripcion: {{restaurante.descripcion}}
           </ion-item>
           <ion-item *ngIf="restaurante.id != '' " >
-            <iframe *ngIf="restaurante.id == 1 " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3440.8872037716505!2d-69.25115108526285!3d-30.41094198175059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9684930fade50583%3A0x2dc9c8823245d515!2sPosada%20Alto%20Verde!5e0!3m2!1ses-419!2sar!4v1655143867878!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <iframe *ngIf="restaurante.id == 2 " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3440.690756876943!2d-69.2223301852627!3d-30.416514581748487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96849393637f09c3%3A0xc226e313f6441af8!2sLa%20Morenita!5e0!3m2!1ses-419!2sar!4v1655143839068!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>          </ion-item>
-        </ion-list>
+            <iframe *ngIf="restaurante.id == 200 " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3440.8872037716505!2d-69.25115108526285!3d-30.41094198175059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9684930fade50583%3A0x2dc9c8823245d515!2sPosada%20Alto%20Verde!5e0!3m2!1ses-419!2sar!4v1655143867878!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe *ngIf="restaurante.id == 201 " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3440.690756876943!2d-69.2223301852627!3d-30.416514581748487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96849393637f09c3%3A0xc226e313f6441af8!2sLa%20Morenita!5e0!3m2!1ses-419!2sar!4v1655143839068!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>         
+           </ion-item>
+        
+          </ion-list>
         
         <!-- Listado de redes sociales-->
         <ion-buttons id="buttons">

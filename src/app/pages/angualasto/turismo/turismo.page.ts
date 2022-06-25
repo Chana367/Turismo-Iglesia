@@ -3,7 +3,7 @@ import { Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { map } from "rxjs/operators";
 import { GlobalesService } from 'src/app/services/globales.service';
-
+import { ToastController } from '@ionic/angular';
 @Component({
   selector: 'app-turismo',
   templateUrl: './turismo.page.html',
@@ -15,7 +15,7 @@ export class TurismoPage implements OnInit {
   turismos: any = []; 
   favorito: any = []; 
 
-  constructor(private http: HttpClient, private router: Router,private storage:GlobalesService) { }
+  constructor(private http: HttpClient, private router: Router,private storage:GlobalesService, private toastController: ToastController) { }
 
   async ngOnInit() {
     const favorito_storage = await this.storage.get('favorito_turismo_angualasto');
@@ -92,7 +92,7 @@ export class TurismoPage implements OnInit {
      this.favorito.push(this.turismos[x])
      await this.storage.set('favorito_turismo_angualasto', this.favorito);
      console.log("Creo", this.storage.get('favorito_turismo_angualasto'))
- 
+     this.presentToast('Agregado a Favoritos')
    }else{
     
     let index=this.obtenerIndice(x);
@@ -101,11 +101,18 @@ export class TurismoPage implements OnInit {
     await this.storage.set('favorito_turismo_angualasto', this.favorito);
     
     console.log("Saco", this.storage.get('favorito_turismo_angualasto'))
-
+    this.presentToast('Eliminado de Favoritos')
    }
 
 
  }
+ async presentToast( message:string ) {
+  const toast = await this.toastController.create({
+    message,
+    duration: 2000
+  });
+  toast.present();
+}
 
 
 }

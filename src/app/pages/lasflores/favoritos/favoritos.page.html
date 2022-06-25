@@ -10,7 +10,7 @@
 
   <ion-card  id="card" mode="ios" *ngFor="let turismo of favorito; let i = index ">
     <div id="img">
-      <img src="assets/img/categorias/turismo/{{turismo.img}}"> /
+      <img src="assets/img/categorias/favoritos/{{turismo.img}}"> /
      
     </div>
     <ion-card-header>
@@ -32,11 +32,19 @@
           Descripcion: {{turismo.descripcion}}
         </ion-item>
         <ion-item *ngIf="turismo.id != '' " >
-          <iframe *ngIf="turismo.id == 1 " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3447.966572419615!2d-69.1357340651123!3d-30.209501499999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9684bd71dca0a507%3A0x1816fe7254006f18!2sDirecci%C3%B3n%20de%20Turismo%20y%20Cultura!5e0!3m2!1ses-419!2sar!4v1654390099713!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          <iframe *ngIf="turismo.id == 2 " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3448.30112763219!2d-69.10812678488121!3d-30.199951781826016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9684bcf026566faf%3A0x722f3878db4afad5!2sFinca%20El%20Martillo!5e0!3m2!1ses-419!2sar!4v1655069707929!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
-          <iframe *ngIf="turismo.id == 3 " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3449.323362273067!2d-69.10825817483048!3d-30.170755623740426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9684bb65b9f5707b%3A0x420a8f2ca520c333!2sCuesta%20Del%20Viento%20Kite%20School!5e0!3m2!1ses-419!2sar!4v1655070655601!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          
+          <!-- turismo -->
+          <iframe *ngIf="turismo.id == 1 " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3444.447229008484!2d-69.21698678526576!3d-30.30979438178651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9684950174e71bad%3A0xfdf42807657a0431!2sDon%20Goyo%20Turismo%20Aventura!5e0!3m2!1ses-419!2sar!4v1655144582206!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe *ngIf="turismo.id == 2 " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3444.354285385486!2d-69.23549748526563!3d-30.312438981785537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x968495a2106cff25%3A0x62d8d7ca82c063a!2sLa%20Comarca%20Del%20Jarillal!5e0!3m2!1ses-419!2sar!4v1655144613341!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+       
+          <!-- hospedaje -->
+          <iframe *ngIf="turismo.id == 100 " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3443.971196247803!2d-69.21017447677923!3d-30.323337123510186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x968495a4df37ce6d%3A0x342d417b57328f18!2sCaba%C3%B1as%20Los%20Frutales!5e0!3m2!1ses-419!2sar!4v1655144927226!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe *ngIf="turismo.id == 101 "src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3444.031885031799!2d-69.21701278526535!3d-30.321610881782274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x968495c8381452ab%3A0x436c3f870a29eedd!2sCaba%C3%B1as%20El%20Sauce!5e0!3m2!1ses-419!2sar!4v1655145125235!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         
+        
+          <!-- restaurantes -->
+          <iframe *ngIf="turismo.id == 200 " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3443.9217463781843!2d-69.22635442000332!3d-30.324743617972306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x968495b6def1a0b5%3A0x6267a0ee5a30187a!2sCaba%C3%B1as%20El%20Relincho!5e0!3m2!1ses-419!2sar!4v1655145766698!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe *ngIf="turismo.id == 201 " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3444.020600000923!2d-69.21380148526539!3d-30.32193188178217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x968495c92cbf306d%3A0x183d60c1cb47b58b!2sPosada%20Bioce%C3%A1nica!5e0!3m2!1ses-419!2sar!4v1655145790838!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
         
         </ion-item>
       </ion-list>      

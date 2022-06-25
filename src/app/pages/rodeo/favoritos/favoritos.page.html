@@ -10,7 +10,7 @@
 
   <ion-card  id="card" mode="ios" *ngFor="let turismo of favorito; let i = index ">
     <div id="img">
-      <img src="assets/img/categorias/turismo/{{turismo.img}}"> /
+      <img src="assets/img/categorias/favoritos/{{turismo.img}}"> /
      
     </div>
     <ion-card-header>
@@ -32,10 +32,20 @@
           Descripcion: {{turismo.descripcion}}
         </ion-item>
         <ion-item *ngIf="turismo.id != '' " >
+          <!-- turismo -->
           <iframe *ngIf="turismo.id == 1 " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3447.966572419615!2d-69.1357340651123!3d-30.209501499999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9684bd71dca0a507%3A0x1816fe7254006f18!2sDirecci%C3%B3n%20de%20Turismo%20y%20Cultura!5e0!3m2!1ses-419!2sar!4v1654390099713!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           <iframe *ngIf="turismo.id == 2 " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3448.30112763219!2d-69.10812678488121!3d-30.199951781826016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9684bcf026566faf%3A0x722f3878db4afad5!2sFinca%20El%20Martillo!5e0!3m2!1ses-419!2sar!4v1655069707929!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
           <iframe *ngIf="turismo.id == 3 " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3449.323362273067!2d-69.10825817483048!3d-30.170755623740426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9684bb65b9f5707b%3A0x420a8f2ca520c333!2sCuesta%20Del%20Viento%20Kite%20School!5e0!3m2!1ses-419!2sar!4v1655070655601!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+         
+          <!-- hospedaje -->
+          <iframe *ngIf="turismo.id == 100 " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3448.531234637207!2d-69.10842918255615!3d-30.19338190000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9684bcb1b6ef8059%3A0x41960550c6996557!2sLa%20Vicu%C3%B1ita!5e0!3m2!1ses-419!2sar!4v1655073342923!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe *ngIf="turismo.id == 101 " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3449.0895127925123!2d-69.11621898526937!3d-30.17743688183406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9684bb5947bb0c0f%3A0x4629cc71e8c4f621!2sLas%20Tapias!5e0!3m2!1ses-419!2sar!4v1655074618073!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe *ngIf="turismo.id == 102 " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3448.5815559739845!2d-69.10981728526893!3d-30.191944981828847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9684bdf964e9109b%3A0x41ab35305057a849!2sLA%20QUITA%20PENA!5e0!3m2!1ses-419!2sar!4v1655075180969!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           
+          <!-- restaurantes -->
+          <iframe *ngIf="turismo.id == 200 " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3447.885694448053!2d-69.13828287347572!3d-30.211809712625012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9684bde4eec7c429%3A0xbb9940ec2470a5d9!2sKarina%20Varela%20Comedor!5e0!3m2!1ses-419!2sar!4v1655071286230!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe *ngIf="turismo.id == 201 " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3447.885694448053!2d-69.13828287347572!3d-30.211809712625012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc0e7be2d5c09a4f8!2sPedro&#39;s%20Confiter%C3%ADa!5e0!3m2!1ses-419!2sar!4v1655071834627!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe *ngIf="turismo.id == 202 " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3447.9638956298686!2d-69.13251048014831!3d-30.20957789665569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9684bced9b2b3d69%3A0x3c4498ec2bb2e0aa!2sConfiter%C3%ADa%20%22Yo%20Tengo%20Fe%22!5e0!3m2!1ses-419!2sar!4v1655072254034!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         
         
         </ion-item>
