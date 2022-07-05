@@ -23,7 +23,21 @@
             "facebook": "https://www.facebook.com/Confiter%C3%ADa-DOnofrio-1977345459235956 ",
             "instagram": "https://www.instagram.com/donofrio_confiteria/",
             "id": "200"
+        },
+
+        {
+            "nombre": "Comedor y Delibery El Tano",
+            "img": "default-restaurantes.jpg",
+            "telefono": "2644573896",
+            "email": "",
+            "descripcion": "Tenemos comidas rápidas y elaboradas al momento, también servicio de viandas y bebidas",
+            "facebook": "https://www.facebook.com/El-TANO-101945692002063 ",
+            "instagram": "",
+            "id": ""
         }
+
+
+
         
     ],
 
@@ -37,6 +51,17 @@
             "facebook": "https://www.facebook.com/Confiter%C3%ADa-DOnofrio-1977345459235956 ",
             "instagram": "",
             "id": "100"
-        }     
+        },
+
+        {
+            "nombre": "Hospedaje Finca Los Filtros",
+            "img": "default.jpg",
+            "telefono": "2644227969",
+            "email": "",
+            "descripcion": "",
+            "facebook": "",
+            "instagram": "",
+            "id": ""
+        }    
     ]
 }

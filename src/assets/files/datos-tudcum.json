@@ -61,6 +61,67 @@
             "instagram": "",
             "id": ""
 
+        },
+
+        {
+            "nombre": "Cabaña La Margarita",
+            "img": "prueba2.jpg",
+            "telefono": "2644833041",
+            "email": "",
+            "descripcion": "",
+            "facebook": "",
+            "instagram": "",
+            "id": "101"
+
+        },
+
+        {
+            "nombre": "Terra Huasi Hostel",
+            "img": "prueba2.jpg",
+            "telefono": "2644604106",
+            "email": "",
+            "descripcion": "",
+            "facebook": "",
+            "instagram": "",
+            "id": ""
+
+        },
+
+        {
+            "nombre": "Hospeda Villa Italia ",
+            "img": "prueba2.jpg",
+            "telefono": "2647498011",
+            "email": "info@posadavillaitalia.com.ar",
+            "descripcion": "",
+            "facebook": "",
+            "instagram": "",
+            "id": ""
+
+        },
+
+        
+        {
+            "nombre": "Hospedaje Godoy",
+            "img": "prueba2.jpg",
+            "telefono": "2647498002",
+            "email": "",
+            "descripcion": "",
+            "facebook": "",
+            "instagram": "",
+            "id": ""
+
+        },
+        
+        {
+            "nombre": "Cabañas Mauricio Diaz",
+            "img": "prueba2.jpg",
+            "telefono": "264456607376",
+            "email": "",
+            "descripcion": "",
+            "facebook": "",
+            "instagram": "",
+            "id": ""
+
         }
 
 

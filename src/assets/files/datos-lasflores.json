@@ -47,14 +47,28 @@
             "instagram": "",
             "id": "201"
 
+        },
+
+        {
+            "nombre": "Microcerveceria Agua Negra",
+            "img": "microcerveceria.jpg",
+            "telefono": "264672739",
+            "email": "jmalberghini@gmail.com",
+            "descripcion": "Todo el Año",
+            "facebook": "https://www.facebook.com/cervezaguanegra",
+            "instagram": "https://www.instagram.com/cervezaguanegra/",
+            "id": "202"
+
         }
+
+        
         
     ],
 
     "hospedaje":[
         {
             "nombre": "Cabañas Los Frutales",
-            "img": "prueba1.jpg",
+            "img": "cabaña.jpg",
             "telefono": "2644600332",
             "email": "sirleylilianasarracina@gmail.com",
             "descripcion": "",
@@ -65,7 +79,7 @@
 
         {
             "nombre": "Cabañas El Sauce",
-            "img": "prueba1.jpg",
+            "img": "cabaña.jpg",
             "telefono": "2646603962",
             "email": "abartol@gmail.com",
             "descripcion": "",
@@ -73,9 +87,329 @@
             "instagram": "",
             "id": "101"
 
+        },
+        
+        {
+            "nombre": "Hotel de Campo La Comarca",
+            "img": "jarillal.jpg",
+            "telefono": "2645861303",
+            "email": "antonio.iacopino@gmail.com",
+            "descripcion": "Cabalgatas guiadas y paseos a caballo por las lomas y llanos del Jarillal. Para niños y personas sin experiencia, paseos dentro de la finca con guia personal para aprender y tomar confianza con los animales. Visita a las llamas| Todos los dias, preferentemente de mañana.",
+            "facebook": "https://www.facebook.com/pages/La-Comarca-del-Jarillal/325401604795395",
+            "instagram": "https://www.instagram.com/lacomarcadeljarillal/",
+            "id": "102"
+
+        },
+
+        
+        {
+            "nombre": "Posada Bioceanica",
+            "img": "posada-bioceanica.jpg",
+            "telefono": "2646726766",
+            "email": "poseadabioceanica@hotmail.com",
+            "descripcion": "",
+            "facebook": "https://www.facebook.com/bioceanicaposada",
+            "instagram": "",
+            "id": "103"
+
+        },
+
+    
+        {
+            "nombre": "Villa Franco",
+            "img": "default.jpg",
+            "telefono": "2644109128",
+            "email": "naccaser@hotmail.com",
+            "descripcion": "",
+            "facebook": "",
+            "instagram": "",
+            "id": "104"
+
+        },
+
+        {
+            "nombre": "Cabañas Mi Angelito ",
+            "img": "angelito.jpg",
+            "telefono": "2645648951",
+            "email": "decabuypus@hotmail.com",
+            "descripcion": "default.jpg",
+            "facebook": "https://www.facebook.com/FamiliaMarinero",
+            "instagram": "",
+            "id": "105"
+
+        },
+
+        {
+            "nombre": "Cabañas El Paisanito",
+            "img": "default.jpg",
+            "telefono": "2647497072",
+            "email": "almacenelpaisanito@gmail.com",
+            "descripcion": "",
+            "facebook": "",
+            "instagram": "",
+            "id": "106"
+
+        },
+
+        
+        {
+            "nombre": "Cabañas Barbaran",
+            "img": "default.jpg",
+            "telefono": "2644605447",
+            "email": "",
+            "descripcion": "",
+            "facebook": "",
+            "instagram": "",
+            "id": ""
+
+        },
+
+        
+        {
+            "nombre": "Cabañas de Mary",
+            "img": "default.jpg",
+            "telefono": "2644182857",
+            "email": "",
+            "descripcion": "",
+            "facebook": "",
+            "instagram": "",
+            "id": "107"
+
+        },
+
+        {
+            "nombre": "Cabañas Aldo Zuliliani",
+            "img": "default.jpg",
+            "telefono": "2647497018",
+            "email": "",
+            "descripcion": "",
+            "facebook": "",
+            "instagram": "",
+            "id": ""
+
+        },
+
+        {
+            "nombre": "Cabañas Rucalem",
+            "img": "default.jpg",
+            "telefono": "2644235719",
+            "email": "",
+            "descripcion": "",
+            "facebook": "",
+            "instagram": "",
+            "id": ""
+
+        },
+
+        {
+            "nombre": "Cabañas Familia Gomez",
+            "img": "default.jpg",
+            "telefono": "2647497018",
+            "email": "",
+            "descripcion": "",
+            "facebook": "",
+            "instagram": "",
+            "id": ""
+
+        },
+
+        {
+            "nombre": "Cabañas El Mangrullo",
+            "img": "default.jpg",
+            "telefono": "2647497035",
+            "email": "",
+            "descripcion": "",
+            "facebook": "",
+            "instagram": "",
+            "id": "108"
+
+        },
+
+        {
+            "nombre": "Cabañas El Gringo",
+            "img": "default.jpg",
+            "telefono": "2644202307",
+            "email": "",
+            "descripcion": "",
+            "facebook": "",
+            "instagram": "",
+            "id": ""
+
+        },
+
+        {
+            "nombre": "Cabañas Valerio",
+            "img": "default.jpg",
+            "telefono": "2647497044",
+            "email": "",
+            "descripcion": "",
+            "facebook": "",
+            "instagram": "",
+            "id": "109"
+
+        },
+
+        {
+            "nombre": "Cabañas Guillermo Alonso",
+            "img": "default.jpg",
+            "telefono": "2647497029",
+            "email": "",
+            "descripcion": "",
+            "facebook": "",
+            "instagram": "",
+            "id": "110"
+
+        },
+
+        {
+            "nombre": "Cabañas Palomar",
+            "img": "default.jpg",
+            "telefono": "2644224405",
+            "email": "",
+            "descripcion": "",
+            "facebook": "",
+            "instagram": "",
+            "id": ""
+
+        },
+
+        {
+            "nombre": "Cabañas La Tremenda",
+            "img": "default.jpg",
+            "telefono": "",
+            "email": "",
+            "descripcion": "",
+            "facebook": "",
+            "instagram": "",
+            "id": "111"
+
+        },
+
+        {
+            "nombre": "Cabañas El Relincho",
+            "img": "default.jpg",
+            "telefono": "",
+            "email": "",
+            "descripcion": "",
+            "facebook": "",
+            "instagram": "",
+            "id": "112"
+
+        },
+
+        {
+            "nombre": "Cabañas Vega",
+            "img": "default.jpg",
+            "telefono": "2645818128",
+            "email": "",
+            "descripcion": "",
+            "facebook": "",
+            "instagram": "",
+            "id": "113"
+
+        },
+
+        {
+            "nombre": "Posada del Valle",
+            "img": "default.jpg",
+            "telefono": "2645589251",
+            "email": "",
+            "descripcion": "",
+            "facebook": "",
+            "instagram": "",
+            "id": "114"
+
+        },
+
+        {
+            "nombre": "Hospedaje Genaro Galleguillo",
+            "img": "default.jpg",
+            "telefono": "2647497022",
+            "email": "",
+            "descripcion": "",
+            "facebook": "",
+            "instagram": "",
+            "id": ""
+
+        },
+
+        {
+            "nombre": "Casa Slavutzky",
+            "img": "default.jpg",
+            "telefono": "2644239329",
+            "email": "",
+            "descripcion": "",
+            "facebook": "",
+            "instagram": "",
+            "id": ""
+
+        },
+
+        {
+            "nombre": "Casa Amarilla",
+            "img": "default.jpg",
+            "telefono": "2644224405",
+            "email": "",
+            "descripcion": "",
+            "facebook": "",
+            "instagram": "",
+            "id": ""
+
+        },
+
+        {
+            "nombre": "Aldea Cabañas",
+            "img": "cabaña.jpg",
+            "telefono": "2645882558",
+            "email": "ricardtrigo@hotmail.com",
+            "descripcion": "El Llano",
+            "facebook": "",
+            "instagram": "",
+            "id": ""
+
+        },
+
+        
+        {
+            "nombre": "Cabaña Gabriel Vega",
+            "img": "cabaña.jpg",
+            "telefono": "2645818128",
+            "email": "gabrielvega@hotmail.com",
+            "descripcion": "",
+            "facebook": "",
+            "instagram": "",
+            "id": ""
+
+        },
+
+            
+        {
+            "nombre": "Cabaña Alto de Las Flores",
+            "img": "cabaña.jpg",
+            "telefono": "2645279600",
+            "email": "sirleylilianasarracina@hotmail.com",
+            "descripcion": "",
+            "facebook": "",
+            "instagram": "",
+            "id": ""
+
+        },
+
+        {
+            "nombre": "Cabañas Los Perales",
+            "img": "losperales.jpg",
+            "telefono": "2644591658",
+            "email": "info@losperales.com.ar",
+            "descripcion": "",
+            "facebook": "https://www.facebook.com/villalosperales",
+            "instagram": "",
+            "id": "115"
+
         }
 
 
-        
+
+                
+    
     ]
 }

@@ -74,7 +74,84 @@
             "instagram": "",
             "id": "101"
 
+        },
+
+        {
+            "nombre": "Cabañas El Sauce Dormido/Refugio Campestre",
+            "img": "cabaña.jpg",
+            "telefono": "2644229427",
+            "email": "saucedormidobellavista@gmail.com",
+            "descripcion": "",
+            "facebook": "",
+            "instagram": "",
+            "id": "102"
+
+        },
+
+        {
+            "nombre": "Cabañas Los Palenques",
+            "img": "cabaña.jpg",
+            "telefono": "2646734325",
+            "email": "estelabeatrizfrazon@gmail.com",
+            "descripcion": "",
+            "facebook": "",
+            "instagram": "",
+            "id": ""
+
+        },
+
+        {
+            "nombre": "Los Viejos Manzanos",
+            "img": "cabaña.jpg",
+            "telefono": "2645052153",
+            "email": "rosakene@hotmail.com",
+            "descripcion": "",
+            "facebook": "",
+            "instagram": "",
+            "id": ""
+
+        },
+
+        
+        {
+            "nombre": "Posada Del Valle",
+            "img": "cabaña.jpg",
+            "telefono": "26451630660",
+            "email": "",
+            "descripcion": "",
+            "facebook": "",
+            "instagram": "",
+            "id": "103"
+
+        },
+
+        {
+            "nombre": "Cabañas Eduardo Correa",
+            "img": "cabaña.jpg",
+            "telefono": "2647496025",
+            "email": "",
+            "descripcion": "",
+            "facebook": "",
+            "instagram": "",
+            "id": ""
+
+        },
+
+        
+        {
+            "nombre": "Cabañas Julio Pinto",
+            "img": "cabaña.jpg",
+            "telefono": "2647496020",
+            "email": "",
+            "descripcion": "",
+            "facebook": "",
+            "instagram": "",
+            "id": ""
+
         }
+
+      
+
 
 
         
