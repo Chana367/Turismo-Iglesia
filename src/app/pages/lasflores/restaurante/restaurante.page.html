@@ -13,7 +13,7 @@
 
     <ion-card  id="card" mode="ios" *ngFor="let restaurante of restaurantes| filtro: textoBuscar; let i = index ">
       <div id="img">
-        <img src="assets/img/categorias/restaurante/{{restaurante.img}}">
+        <img src="assets/img/categorias/favoritos/{{restaurante.img}}">
       </div>
       <ion-card-header>
         <ion-card-title *ngIf="restaurante.nombre != '' " >{{restaurante.nombre}}</ion-card-title>
