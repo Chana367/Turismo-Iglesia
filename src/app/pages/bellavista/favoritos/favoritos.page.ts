@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { GlobalesService } from 'src/app/services/globales.service';
 import { ToastController } from '@ionic/angular';
+import { IonInfiniteScroll } from '@ionic/angular';
 @Component({
   selector: 'app-favoritos',
   templateUrl: './favoritos.page.html',
@@ -86,5 +87,33 @@ export class FavoritosPage implements OnInit {
     toast.present();
   }
 
+  abrir: any= [];
+  abrirCard(i){
+    if(this.abrir[i]==null){
+      this.abrir[i]=false
+    }
+    if(this.abrir[i]==false){
+      this.abrir[i]=true
+    }else{
+      this.abrir[i]=false
+    }
+
+  }
+
+  @ViewChild(IonInfiniteScroll) infiniteScroll: IonInfiniteScroll;
+  num_lugares: number=3;
+  mostrarLugares(event) {
+    setTimeout(() => {
+     
+      if (this.num_lugares < this.favorito.length) {
+        this.num_lugares++;
+        event.target.complete();
+     
+      }else{
+        this.infiniteScroll.disabled=true
+        this.presentToast('No hay mas lugares')
+      }
+    }, 1000);
+  }
 
 }

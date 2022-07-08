@@ -1,9 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { map } from "rxjs/operators";
 import { GlobalesService } from 'src/app/services/globales.service';
 import { ToastController } from '@ionic/angular';
+import { IonInfiniteScroll } from '@ionic/angular';
 @Component({
   selector: 'app-hospedaje',
   templateUrl: './hospedaje.page.html',
@@ -128,4 +129,34 @@ export class HospedajePage implements OnInit {
     });
     toast.present();
   }
+
+  abrir: any= [];
+  abrirCard(i){
+    if(this.abrir[i]==null){
+      this.abrir[i]=false
+    }
+    if(this.abrir[i]==false){
+      this.abrir[i]=true
+    }else{
+      this.abrir[i]=false
+    }
+
+  }
+
+  @ViewChild(IonInfiniteScroll) infiniteScroll: IonInfiniteScroll;
+  num_lugares: number=90;
+  mostrarLugares(event) {
+    setTimeout(() => {
+     
+      if (this.num_lugares < this.hospedajes.length) {
+        this.num_lugares++;
+        event.target.complete();
+     
+      }else{
+        this.infiniteScroll.disabled=true
+        this.presentToast('No hay mas lugares')
+      }
+    }, 1000);
+  }
+
 }

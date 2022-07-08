@@ -1,10 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { map } from "rxjs/operators";
 import { Storage } from '@ionic/storage-angular';
 import { GlobalesService } from 'src/app/services/globales.service';
 import { ToastController } from '@ionic/angular';
+import { IonInfiniteScroll } from '@ionic/angular';
 @Component({
   selector: 'app-turismo',
   templateUrl: './turismo.page.html',
@@ -20,19 +21,7 @@ export class TurismoPage implements OnInit {
   constructor(private http: HttpClient, private router: Router,private storage:GlobalesService, private toastController: ToastController) { }
 
   async ngOnInit() {
-    //await this.storage.create();
-    // const favorito_storage = await this.storage.get('favorito_turismo_rodeo');
-    
-    // if((favorito_storage==null) || (favorito_storage.length==0)){
-      
-    //   console.log("Se ejecuta el if del ngOninit")
-    //   await this.storage.set('favorito_turismo_rodeo', this.favorito);
 
-    // }else{
-    //   console.log("Se ejecuta el else del ngOninit")
-    //   this.favorito = favorito_storage;
-    
-    // }
 
     const favorito_storage = await this.storage.get('favorito_turismo_rodeo');
     
@@ -148,5 +137,37 @@ export class TurismoPage implements OnInit {
     });
     toast.present();
   }
+
+  abrir: any= [];
+  abrirCard(i){
+    if(this.abrir[i]==null){
+      this.abrir[i]=false
+    }
+    if(this.abrir[i]==false){
+      this.abrir[i]=true
+    }else{
+      this.abrir[i]=false
+    }
+
+  }
+
+
+
+  @ViewChild(IonInfiniteScroll) infiniteScroll: IonInfiniteScroll;
+  num_lugares: number=3;
+  mostrarLugares(event) {
+    setTimeout(() => {
+     
+      if (this.num_lugares < this.turismos.length) {
+        this.num_lugares++;
+        event.target.complete();
+     
+      }else{
+        this.infiniteScroll.disabled=true
+        this.presentToast('No hay mas lugares')
+      }
+    }, 1000);
+  }
+
 
 }

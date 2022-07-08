@@ -1,8 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 
 import { GlobalesService } from 'src/app/services/globales.service';
 import { ToastController } from '@ionic/angular';
-
+import { IonInfiniteScroll } from '@ionic/angular';
 @Component({
   selector: 'app-favoritos',
   templateUrl: './favoritos.page.html',
@@ -32,30 +32,6 @@ export class FavoritosPage implements OnInit {
     
     console.log(this.favorito)
   
-    
-    // this.favorito.forEach((item)=>{
-    // 	//pushes only unique element
-    //   //   if(!this.favorito.includes(item)){
-    // 	// 	this.favorito.splice(item,1)
-    //   //   console.log("sssssssssss",this.favorito)
-    // 	// }
-    // })
-
-
-    //   for(let i=0;i<this.favorito.length;i++)
-    //  {
-    //    if (this.favorito[i]==this.favorito[i++]){
-    //        this.favorito.splice(this.favorito.indexOf(this.favorito[i]), 1);
-    //       // delete this.favorito[i];
-    //       //this.favorito = favorito_storage;
-    //       console.log("se repite el ", this.favorito[i])
-    //    }
-    //  }
-     
-    
-   
-   // console.log(this.favorito)
-    
     
   }
 
@@ -117,4 +93,35 @@ export class FavoritosPage implements OnInit {
     });
     toast.present();
   }
+    
+  abrir: any= [];
+  abrirCard(i){
+    if(this.abrir[i]==null){
+      this.abrir[i]=false
+    }
+    if(this.abrir[i]==false){
+      this.abrir[i]=true
+    }else{
+      this.abrir[i]=false
+    }
+
+  }
+
+  
+  @ViewChild(IonInfiniteScroll) infiniteScroll: IonInfiniteScroll;
+  num_lugares: number=3;
+  mostrarLugares(event) {
+    setTimeout(() => {
+     
+      if (this.num_lugares < this.favorito.length) {
+        this.num_lugares++;
+        event.target.complete();
+     
+      }else{
+        this.infiniteScroll.disabled=true
+        this.presentToast('No hay mas lugares')
+      }
+    }, 1000);
+  }
+
 }

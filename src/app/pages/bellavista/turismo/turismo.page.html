@@ -12,14 +12,32 @@
   <div id="container">
 
     <ion-card  id="card" mode="ios" *ngFor="let turismo of turismos| filtro: textoBuscar; let i = index ">
+      <div *ngIf="i<num_lugares">
       <div id="img">
         <img src="assets/img/categorias/favoritos/{{turismo.img}}">
       </div>
       <ion-card-header>
         <ion-card-title *ngIf="turismo.nombre != '' " >{{turismo.nombre}}</ion-card-title>
+        <br>
+        <ion-buttons>
+
+          <ion-button (click)="abrirCard(i)" *ngIf="!abrir[i]">Click para Mostrar Informacion</ion-button>
+          <ion-button (click)="abrirCard(i)" *ngIf="abrir[i]">Click para Ocultar Informacion</ion-button>
+          
+          <ion-button *ngIf="!favoritoEsta(i)" (click)="favoritos(i)" slot="end">
+            <ion-icon name="bookmark-outline" size="large"></ion-icon>
+          </ion-button>
+          <ion-button *ngIf="favoritoEsta(i)" (click)="favoritos(i)" slot="end">
+            <ion-icon name="bookmark"  size="large"></ion-icon>
+          </ion-button>      
+        </ion-buttons>
       </ion-card-header>
-      
-      <ion-card-content>
+
+      <ion-card-content *ngIf="!abrir[i]" >
+
+      </ion-card-content>
+
+      <ion-card-content *ngIf="abrir[i]">
         <!-- Listado de datos-->
         <ion-list>
           <ion-item *ngIf="turismo.telefono != '' " href="tel:{{turismo.telefono}}">
@@ -65,9 +83,14 @@
         
         
       </ion-card-content>
-      
+    </div>
     </ion-card>
   </div>
-    
+    <ion-infinite-scroll threshold="100px" (ionInfinite)="mostrarLugares($event)">
+      <ion-infinite-scroll-content
+      loadingSpinner="crescent"
+      loadingText="Cargando Lugares...">
+    </ion-infinite-scroll-content>
+    </ion-infinite-scroll>
   </ion-content>
   
