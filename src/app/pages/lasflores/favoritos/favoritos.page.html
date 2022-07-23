@@ -3,7 +3,7 @@
     <ion-buttons slot="start">
       <ion-back-button icon="arrow-back-circle-sharp" defaultHref="/lasflores"></ion-back-button>
     </ion-buttons>
-    <ion-title mode="ios">Favoritos</ion-title>
+    <ion-title id="title-header" mode="ios">Favoritos</ion-title>
   </ion-toolbar>
 </ion-header>
 <ion-content>
@@ -15,12 +15,12 @@
      
     </div>
     <ion-card-header>
-      <ion-card-title *ngIf="turismo.nombre != '' " >{{turismo.nombre}}</ion-card-title>
+      <ion-card-title id="title" *ngIf="turismo.nombre != '' " >{{turismo.nombre}}</ion-card-title>
       <br>
       <ion-buttons>
 
-        <ion-button (click)="abrirCard(i)" *ngIf="!abrir[i]">Click para Mostrar Informacion</ion-button>
-        <ion-button (click)="abrirCard(i)" *ngIf="abrir[i]">Click para Ocultar Informacion</ion-button>
+        <ion-button id="click" (click)="abrirCard(i)" *ngIf="!abrir[i]">Click para Mostrar Informacion</ion-button>
+        <ion-button id="click" (click)="abrirCard(i)" *ngIf="abrir[i]">Click para Ocultar Informacion</ion-button>
         
         <ion-button *ngIf="!favoritoEsta(i)" (click)="favoritos(i)" slot="end">
           <ion-icon name="bookmark-outline" size="large"></ion-icon>
@@ -39,9 +39,7 @@
       <!-- Listado de datos-->
       <ion-list>
         <ion-item *ngIf="turismo.telefono != '' " href="tel:{{turismo.telefono}}">
-          <ion-label >
             Telefono: {{turismo.telefono}}
-          </ion-label>
         </ion-item>
         <ion-item *ngIf="turismo.email != '' " href="mailto:{{turismo.email}}">
           Email: {{turismo.email}}

@@ -3,7 +3,7 @@
     <ion-buttons slot="start">
       <ion-back-button icon="arrow-back-circle-sharp" defaultHref="/rodeo"></ion-back-button>
     </ion-buttons>
-    <ion-title mode="ios">Hospedaje</ion-title>
+    <ion-title id="title-header" mode="ios">Hospedaje</ion-title>
   </ion-toolbar>
 </ion-header>
   <ion-searchbar (ionChange)="buscar($event)"animated mode="ios" placeholder="Buscar"></ion-searchbar>      <!-- Busca por titulo los videos-->
@@ -17,12 +17,12 @@
         <img src="assets/img/categorias/favoritos/{{hospedaje.img}}">
       </div>
       <ion-card-header>
-        <ion-card-title *ngIf="hospedaje.nombre != '' " >{{hospedaje.nombre}}</ion-card-title>
+        <ion-card-title id="title" *ngIf="hospedaje.nombre != '' " >{{hospedaje.nombre}}</ion-card-title>
         <br>
         <ion-buttons>
 
-          <ion-button (click)="abrirCard(i)" *ngIf="!abrir[i]">Click para Mostrar Informacion</ion-button>
-          <ion-button (click)="abrirCard(i)" *ngIf="abrir[i]">Click para Ocultar Informacion</ion-button>
+          <ion-button id="click" (click)="abrirCard(i)" *ngIf="!abrir[i]">Click para Mostrar Informacion</ion-button>
+          <ion-button id="click" (click)="abrirCard(i)" *ngIf="abrir[i]">Click para Ocultar Informacion</ion-button>
           
           <ion-button *ngIf="!favoritoEsta(i)" (click)="favoritos(i)" slot="end">
             <ion-icon name="bookmark-outline" size="large"></ion-icon>
@@ -40,10 +40,8 @@
       <ion-card-content *ngIf="abrir[i]">
         <!-- Listado de datos-->
         <ion-list>
-          <ion-item *ngIf="hospedaje.telefono != '' " href="tel:{{hospedaje.telefono}}">
-            <ion-label >
+          <ion-item *ngIf="hospedaje.telefono != '' " href="tel:{{hospedaje.telefono}}"> 
               Telefono: {{hospedaje.telefono}}
-            </ion-label>
           </ion-item>
           <ion-item *ngIf="hospedaje.email != '' " href="mailto:{{hospedaje.email}}">
             Email: {{hospedaje.email}}

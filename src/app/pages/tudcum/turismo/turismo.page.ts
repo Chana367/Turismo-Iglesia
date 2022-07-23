@@ -133,7 +133,7 @@ export class TurismoPage implements OnInit {
   
 
     @ViewChild(IonInfiniteScroll) infiniteScroll: IonInfiniteScroll;
-    num_lugares: number=3;
+    num_lugares: number=90;
     mostrarLugares(event) {
       setTimeout(() => {
        

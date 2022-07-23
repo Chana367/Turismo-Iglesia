@@ -3,7 +3,7 @@
     <ion-buttons slot="start">
       <ion-back-button icon="arrow-back-circle-sharp" defaultHref="/bellavista"></ion-back-button>
     </ion-buttons>
-    <ion-title mode="ios">Restaurantes</ion-title>
+    <ion-title id="title-header" mode="ios">Restaurantes</ion-title>
   </ion-toolbar>
 </ion-header>
   <ion-searchbar (ionChange)="buscar($event)"animated mode="ios" placeholder="Buscar"></ion-searchbar>      <!-- Busca por titulo los videos-->
@@ -18,12 +18,12 @@
         <img src="assets/img/categorias/favoritos/{{restaurante.img}}">
       </div>
       <ion-card-header>
-        <ion-card-title *ngIf="restaurante.nombre != '' " >{{restaurante.nombre}}</ion-card-title>
+        <ion-card-title id="title" *ngIf="restaurante.nombre != '' " >{{restaurante.nombre}}</ion-card-title>
         <br>
         <ion-buttons>
 
-          <ion-button (click)="abrirCard(i)" *ngIf="!abrir[i]">Click para Mostrar Informacion</ion-button>
-          <ion-button (click)="abrirCard(i)" *ngIf="abrir[i]">Click para Ocultar Informacion</ion-button>
+          <ion-button id="click" (click)="abrirCard(i)" *ngIf="!abrir[i]">Click para Mostrar Informacion</ion-button>
+          <ion-button id="click" (click)="abrirCard(i)" *ngIf="abrir[i]">Click para Ocultar Informacion</ion-button>
           
           <ion-button *ngIf="!favoritoEsta(i)" (click)="favoritos(i)" slot="end">
             <ion-icon name="bookmark-outline" size="large"></ion-icon>
@@ -42,9 +42,7 @@
         <!-- Listado de datos-->
         <ion-list>
           <ion-item *ngIf="restaurante.telefono != '' " href="tel:{{restaurante.telefono}}">
-            <ion-label >
-              Telefono: {{restaurante.telefono}}
-            </ion-label>
+              Telefono: {{restaurante.telefono}
           </ion-item>
           <ion-item *ngIf="restaurante.email != '' " href="mailto:{{restaurante.email}}">
             Email: {{restaurante.email}}

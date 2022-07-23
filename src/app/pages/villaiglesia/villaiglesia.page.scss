@@ -1,3 +1,13 @@
+@font-face {
+    font-family: title;
+    src: url(/assets/fonts/VisbyHeavy.otf);
+}
+
+@font-face {
+    font-family: item;
+    src: url(/assets/fonts/VisbyMedium.otf);
+}
+
 #img{
     width: 100%;
     max-width: 700px;
@@ -13,3 +23,31 @@
     
 }
 
+#card{
+    // background-image: url("/assets/img/fondo-cards35.jpg");
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-position: center;
+
+    // background-color: #e3e3cc;
+    background-color: #534e9e;
+}
+
+ion-card-title{
+    // background-color: #e3e3cc;
+    // background-color: #534e9e;
+    color: #FFFF;
+    border-radius: 15px;
+}
+
+#title{
+    font-family: title;
+     color:  #FFFF ;
+   //   color:  #f1914d;
+}
+
+#title-header{
+    font-family: title;
+     color:  black ;
+}
+   

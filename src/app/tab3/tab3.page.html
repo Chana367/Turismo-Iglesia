@@ -1,6 +1,6 @@
 <ion-header [translucent]="true" mode="ios">
   <ion-toolbar>
-    <ion-title>
+    <ion-title id="title-header">
       Contacto
     </ion-title>
   </ion-toolbar>
@@ -10,56 +10,23 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Contacto</ion-title>
+      <ion-title id="title-header" size="large">Contacto</ion-title>
     </ion-toolbar>
   </ion-header>
 
   <app-explore-container name="Tab 3 page"></app-explore-container>
-<!-- 
-<body>
-  
-  <section class="form-contact">
-    <header>
-      <span>
-        <img src="assets/img/logos/logo.jpg" alt="">
-      
-      </span>
-   
-    </header>
-    <span>
-      <img src="assets/img/logos/intendente.jpg" alt="">
-    </span>
 
-  
-    <h3>Intendente</h3>
-    <ion-buttons id="buttons">
-
-      <ion-button href="" target="_blank">
-        <ion-icon size="large" name="logo-facebook"></ion-icon>
-      </ion-button>
-      <ion-button href="" target="_blank"  >
-        <ion-icon size="large" name="logo-instagram"></ion-icon>
-      </ion-button>
-      <ion-button href="" target="_blank">
-        <ion-icon size="large" name="logo-whatsapp"></ion-icon>
-      </ion-button>
-
-    </ion-buttons>
-
-  </section>
-  
-</body> -->
 <span>
   <img src="assets/img/logos/logo.jpg" alt="">
-
 </span>
-<ion-card>
+<ion-card id="card">
+
   <div id="img">
     <img src="assets/img/logos/intendente.jpg"> 
   </div>
   <ion-card-header>
-    <ion-card-subtitle>Intendente</ion-card-subtitle>
-    <ion-card-title>Dr. Jorge Leopoldo Espejo</ion-card-title>
+    <ion-card-subtitle id="subtitle">Intendente</ion-card-subtitle>
+    <ion-card-title id="title">Dr. Jorge Leopoldo Espejo</ion-card-title>
     
   </ion-card-header>
   <ion-card-content>
@@ -91,13 +58,13 @@
   
 </ion-card>
 
-<ion-card>
+<ion-card id="card">
   <div id="img">
     <img src="assets/img/logos/desarrollador.jpg"> 
   </div>
   <ion-card-header>
-    <ion-card-subtitle>Desarrollador</ion-card-subtitle>
-    <ion-card-title>Francisco Paredes</ion-card-title>
+    <ion-card-subtitle id="subtitle">Desarrollador</ion-card-subtitle>
+    <ion-card-title id="title">Francisco Paredes</ion-card-title>
   </ion-card-header>
 
   <ion-card-content>
